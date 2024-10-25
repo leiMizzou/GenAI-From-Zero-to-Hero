@@ -74,7 +74,7 @@
   - [数据集](https://tianchi.aliyun.com/dataset/95414) 
   - [GitHub链接](https://github.com/CBLUEbenchmark/CBLUE)
 - **各种内容精选**：[StarryDivineSky](https://github.com/wuwenjie1992/StarryDivineSky)
-- **多模态与硬件**：
+- **多模态与硬件**
 <img src="./images/preface-6.png" alt="HITSenarios" width="" />
 
 ### GenAI技术生态与临床医疗场景有众多结合可能：
