@@ -61,8 +61,7 @@
 <img src="./images/preface-4.png" alt="Lecun2023" width="" />
 
 ### 开源社区的蓬勃发展，以github为例：
-<img src="./images/preface-5.png" alt="github" width="" />
-
+- **GenAI项目的快速增加**：<img src="./images/preface-5.png" alt="github" width="" />
 - **LLMs模型的一键下载部署与训练**：[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md)
 - **LLMs高速推理服务引擎**：[vLLM](https://github.com/vllm-project/vllm)
 - **企业级LLMs中间件及RAG/Agent应用框架**：[Langchain-Chatchat](https://github.com/chatchat-space/Langchain-Chatchat)
@@ -76,7 +75,6 @@
   - [GitHub链接](https://github.com/CBLUEbenchmark/CBLUE)
 - **各种内容精选**：[StarryDivineSky](https://github.com/wuwenjie1992/StarryDivineSky)
 - **多模态与硬件**：
-- **GenAI项目的快速增加**
 <img src="./images/preface-6.png" alt="HITSenarios" width="" />
 
 ### GenAI技术生态与临床医疗场景有众多结合可能：
