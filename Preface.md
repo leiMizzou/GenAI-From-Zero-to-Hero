@@ -62,6 +62,7 @@
 <img src="./images/preface-4.png" alt="Lecun2023" width="600" />
 
 ### 开源社区的蓬勃发展，以github为例：
+<img src="./images/preface-5.png" alt="github" width="600" />
 
 - **LLMs模型的一键下载部署与训练**：[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md)
 - **LLMs高速推理服务引擎**：[vLLM](https://github.com/vllm-project/vllm)
@@ -78,7 +79,7 @@
   - [GitHub链接](https://github.com/CBLUEbenchmark/CBLUE)
 
 ### GenAI技术生态与临床医疗场景有众多结合可能
-
+<img src="./images/preface-6.png" alt="GenAI@HIT" width="600" />
 - 本质是用数学方法对人类文本语义进行压缩和还原
   - 信息获取、处理、分析、生成
   - 场景关键信息的获取
@@ -92,8 +93,9 @@
   - 场景应用数据的获取很关键
   - 上限提升但不显著，AI进入门槛大幅降低竞争激烈，短期拼价格，盈利不乐观
   - 技术上利用好开源社区资源，产品需创造差异性
+<img src="./images/preface-7.png" alt="middleware" width="600" />
 
-### 医疗信息化业务应用角度（从Zero to Hero）
+### 医疗信息化业务应用角度
 
 - **电力 > 算力 > 基础模型 > 应用**（王坚博士三个不等式）- 需求非供应稀缺
 - **GenAI重构**，工作效率提高3～5倍，知识技能利用门槛大幅降低，重点在优化工作流
