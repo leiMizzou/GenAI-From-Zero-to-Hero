@@ -66,7 +66,7 @@
 - **GenAI项目的快速增加**：<img src="./images/preface-5.png" alt="github" width="" />
 - **LLMs模型的一键下载部署与训练**：[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md)
 - **LLMs高速推理服务引擎**：[vLLM](https://github.com/vllm-project/vllm)
-- **企业级LLMs中间件及RAG/Agent应用框架**：[Langchain-Chatchat](https://github.com/chatchat-space/Langchain-Chatchat), [RagFlow](https://github.com/infiniflow/ragflow)
+- **企业级LLMs中间件及RAG/Agent应用框架**：[Langchain-Chatchat](https://github.com/chatchat-space/Langchain-Chatchat), [RagFlow](https://github.com/infiniflow/ragflow/blob/main/README_zh.md)
 - **开源数据标注工具**：[awesome-open-data-annotation](https://github.com/leiMizzou/awesome-open-data-annotation)
 - **编程伴侣**：Github Copilot，Cursor AI
 - **EHR数据分析工具**：
