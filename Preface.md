@@ -79,8 +79,7 @@
   - [GitHub链接](https://github.com/CBLUEbenchmark/CBLUE)
 
 
-### GenAI技术生态与临床医疗场景有众多结合可能
-<img src="./images/preface-6.png" alt="GenAIHIT" width="" />
+### GenAI技术生态与临床医疗场景有众多结合可能:
 - **本质是用数学方法对人类文本语义进行压缩和还原**
   - 信息获取、处理、分析、生成
   - 场景关键信息的获取
@@ -94,7 +93,6 @@
   - 场景应用数据的获取很关键
   - 上限提升但不显著，AI进入门槛大幅降低竞争激烈，短期拼价格，盈利不乐观
   - 技术上利用好开源社区资源，产品需创造差异性
-<img src="./images/preface-7.png" alt="middleware" width="" />
 
 ### 医疗信息化业务应用角度
 
