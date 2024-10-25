@@ -4,7 +4,7 @@
 ---
 
 ### 从“Pipeline”到“端到端”：基于transformer模型的Token流生产（Imagenet和AlexNet@2012，深度学习革命
-![从“Pipeline”到“端到端”：基于transformer模型的Token流生产（Imagenet和AlexNet@2012，深度学习革命](./images/preface-2.png)
+<img src="./images/preface-2.png" alt="end2end" width="600" />
 
 ### NLP pipeline
 
@@ -17,7 +17,7 @@
 
 **可解释性强**：每个步骤的处理过程是透明的，可以清楚地理解每个模块的作用。
 
-### End to End
+### End2End
 
 - **直接优化最终目标**：端到端模型的训练目标直接与最终任务（如分类准确率、翻译质量等）相关联，避免了传统 Pipeline 中中间步骤的手动设计和优化；
 - **减少中间误差传播**：传统的 Pipeline 方法中，各个独立步骤之间的误差可能会相互累积，而端到端方法则将整个流程作为一个整体进行优化，减少了误差的传播和累积；
