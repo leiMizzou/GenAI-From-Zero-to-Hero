@@ -97,6 +97,8 @@
 - **通用 vs 垂直**，小模型（<3B）finetune是例外
 - **中文医疗信息处理评测基准** CBLUE数据集
 - **八成的选择，两成的价格**
+- 
+<img src="./images/preface-7.png" alt="cost" width="" />
 
 ### 教育（从Zero到Hero）
 
