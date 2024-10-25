@@ -4,7 +4,7 @@
 ---
 
 ### 从“Pipeline”到“端到端”：基于transformer模型的Token流生产（Imagenet和AlexNet@2012，深度学习革命
-<img src="./images/preface-2.png" alt="end2end" width="600" />
+<img src="./images/preface-2.png" alt="end2end" width="" />
 
 ### NLP pipeline
 
@@ -59,10 +59,10 @@
 - **Study reproduction** - 80% time saved
 
 ### Y.LeCun, META, 2023.9.9
-<img src="./images/preface-4.png" alt="Lecun2023" width="600" />
+<img src="./images/preface-4.png" alt="Lecun2023" width="" />
 
 ### 开源社区的蓬勃发展，以github为例：
-<img src="./images/preface-5.png" alt="github" width="600" />
+<img src="./images/preface-5.png" alt="github" width="" />
 
 - **LLMs模型的一键下载部署与训练**：[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md)
 - **LLMs高速推理服务引擎**：[vLLM](https://github.com/vllm-project/vllm)
@@ -79,7 +79,7 @@
   - [GitHub链接](https://github.com/CBLUEbenchmark/CBLUE)
 
 ### GenAI技术生态与临床医疗场景有众多结合可能
-<img src="./images/preface-6.png" alt="GenAI@HIT" width="600" />
+<img src="./images/preface-6.png" alt="GenAI@HIT" width="" />
 - 本质是用数学方法对人类文本语义进行压缩和还原
   - 信息获取、处理、分析、生成
   - 场景关键信息的获取
@@ -93,7 +93,7 @@
   - 场景应用数据的获取很关键
   - 上限提升但不显著，AI进入门槛大幅降低竞争激烈，短期拼价格，盈利不乐观
   - 技术上利用好开源社区资源，产品需创造差异性
-<img src="./images/preface-7.png" alt="middleware" width="600" />
+<img src="./images/preface-7.png" alt="middleware" width="" />
 
 ### 医疗信息化业务应用角度
 
