@@ -1,5 +1,5 @@
-## 序言：从Pipeline到端到端——Transformer模型与开源生态的演进
-## Preface: From Pipeline to End-to-End—The Evolution of Transformer Models and the Open Source Ecosystem
+## 从Pipeline到端到端——Transformer模型与开源生态的演进
+## From Pipeline to End-to-End—The Evolution of Transformer Models and the Open Source Ecosystem
 
 ---
 
