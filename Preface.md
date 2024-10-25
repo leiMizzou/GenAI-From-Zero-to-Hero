@@ -47,7 +47,7 @@
 - **Gradient Descent（梯度下降）**：一种优化算法，通过迭代地沿着损失函数梯度的负方向更新模型参数，以寻找损失函数的最小值。梯度下降有多种变种，如批量梯度下降、小批量梯度下降和随机梯度下降（SGD）。
 
   
-### GraphCast (DeepMind，GNN) 10日天气预测 [https://github.com/google-deepmind/graphcast](https://github.com/google-deepmind/graphcast)
+### GraphCast (DeepMind，GNN) 10日天气预测 [GraphCast](https://github.com/google-deepmind/graphcast)
 
 - **准确性**超过了业界公认的高标准的欧洲中期天气预报中心（ECMWF）的高分辨率天气模拟系统（HRES）
 - **GraphCast进行10天的预测仅需不到一分钟的时间**，传统方法如HRES可能需要数小时的超级计算机计算
