@@ -77,7 +77,11 @@
   - [GitHub链接](https://github.com/CBLUEbenchmark/CBLUE)
 - **各种内容精选**：[StarryDivineSky](https://github.com/wuwenjie1992/StarryDivineSky)
 - **多模态与硬件**：
-  ![robot](./images/preface-1.mp4)
+<video width="640" height="480" controls>
+  <source src="./videos/preface-1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 - **GenAI项目的快速增加**
 <img src="./images/preface-6.png" alt="HITSenarios" width="" />
 
