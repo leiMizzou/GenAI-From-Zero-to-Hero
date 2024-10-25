@@ -72,12 +72,13 @@
 - **EHR数据分析工具**：
   - [ehrapy](https://github.com/theislab/ehrapy)
   - [Nature Article](https://www.nature.com/articles/s41591-024-03214-0)
-- **各种内容精选**：[StarryDivineSky](https://github.com/wuwenjie1992/StarryDivineSky)
-- **GenAI项目的快速增加**
-- **中文医疗信息处理评测基准CBLUE数据集**：
+- - **中文医疗信息处理评测基准CBLUE数据集**：
   - [数据集](https://tianchi.aliyun.com/dataset/95414) 
   - [GitHub链接](https://github.com/CBLUEbenchmark/CBLUE)
-
+- **各种内容精选**：[StarryDivineSky](https://github.com/wuwenjie1992/StarryDivineSky)
+- **多模态与硬件**：
+  ![robot](./images/preface-1.mp4)
+- **GenAI项目的快速增加**
 <img src="./images/preface-6.png" alt="HITSenarios" width="" />
 
 ### GenAI技术生态与临床医疗场景有众多结合可能：
