@@ -108,8 +108,8 @@
 
 ### Q&A, Thanks!
 
-- **开源项目分享群** 
-<img src="./images/vxgroup.png" alt="vxgroup" width="100" />
+- **开源项目分享群**
+  - <img src="./images/vxgroup.png" alt="vxgroup" width="100" />
 
 - **个人微信**
-<img src="./images/vx.png" alt="vx" width="100" />
+  - <img src="./images/vx.png" alt="vx" width="100" />
