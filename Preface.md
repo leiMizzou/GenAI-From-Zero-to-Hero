@@ -64,7 +64,7 @@
 
 ### 开源社区的蓬勃发展，以github为例：
 - **GenAI项目的快速增加**：<img src="./images/preface-5.png" alt="github" width="" />
-- **LLMs模型的一键下载部署与训练**：[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md)
+- **LLMs模型的一键下载部署与训练**：[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md), [RagFlow](https://github.com/infiniflow/ragflow)
 - **LLMs高速推理服务引擎**：[vLLM](https://github.com/vllm-project/vllm)
 - **企业级LLMs中间件及RAG/Agent应用框架**：[Langchain-Chatchat](https://github.com/chatchat-space/Langchain-Chatchat)
 - **开源数据标注工具**：[awesome-open-data-annotation](https://github.com/leiMizzou/awesome-open-data-annotation)
