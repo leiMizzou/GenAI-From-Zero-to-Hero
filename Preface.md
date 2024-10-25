@@ -78,7 +78,7 @@
   - [数据集](https://tianchi.aliyun.com/dataset/95414) 
   - [GitHub链接](https://github.com/CBLUEbenchmark/CBLUE)
 
-<img src="./images/preface-6.png" alt="HITSenarios" width="600" />
+<img src="./images/preface-6.png" alt="HITSenarios" width="" />
 
 ### GenAI技术生态与临床医疗场景有众多结合可能：
 - **本质是用数学方法对人类文本语义进行压缩和还原**：信息获取、处理、分析、生成；场景关键信息的获取
