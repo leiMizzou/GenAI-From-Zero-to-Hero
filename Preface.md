@@ -107,7 +107,9 @@
 - **陶艺课的故事**
 
 ### Q&A, Thanks!
--- **开源项目分享群** 
+
+- **开源项目分享群** 
 <img src="./images/vxgroup.png" alt="vxgroup" width="100" />
--- **个人微信**
+
+- **个人微信**
 <img src="./images/vx.png" alt="vx" width="100" />
