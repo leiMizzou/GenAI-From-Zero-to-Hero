@@ -2,7 +2,7 @@
 
 ---
 
-### 从“Pipeline”到“端到端”：基于transformer模型的Token流生产（Imagenet和AlexNet@2012，深度学习革命
+### 从“Pipeline”到“端到端”：基于transformer模型的Token流生产（Imagenet和AlexNet@2012，《深度学习革命》by 凯德·梅茨）
 <img src="./images/preface-2.png" alt="end2end" width="" />
 
 ### NLP pipeline
