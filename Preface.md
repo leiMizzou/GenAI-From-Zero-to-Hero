@@ -51,6 +51,7 @@
 - **Study reproduction** - 80% time saved
 
 ### Y.LeCun, META, 2023.9.9
+![Lecun2023](./images/preface-4.png)
 
 ### 开源社区的蓬勃发展，以github为例：
 
