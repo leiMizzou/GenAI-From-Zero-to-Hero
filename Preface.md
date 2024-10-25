@@ -80,7 +80,7 @@
 
 
 ### GenAI技术生态与临床医疗场景有众多结合可能
-<img src="./images/preface-6.png" alt="GenAI@HIT" width="" />
+<img src="./images/preface-6.png" alt="GenAIHIT" width="" />
 - **本质是用数学方法对人类文本语义进行压缩和还原**
   - 信息获取、处理、分析、生成
   - 场景关键信息的获取
