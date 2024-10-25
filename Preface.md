@@ -4,7 +4,7 @@
 ---
 
 
-[从“Pipeline”到“端到端”：基于transformer模型的Token流生产（Imagenet和AlexNet@2012，深度学习革命）](./images/preface-2.png)
+![从“Pipeline”到“端到端”：基于transformer模型的Token流生产（Imagenet和AlexNet@2012，深度学习革命](./images/preface-2.png)
 ### NLP pipeline
 
 - **文本预处理**：分词、去除停用词、词性标注等；
