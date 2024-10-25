@@ -55,7 +55,7 @@
 ### ChatGPT4上线（2023.2）：调研、编码与论文重现（知识储备是使用说明书，不足迭代弥补）
 
 - **科研灵感发现** - 专家访谈
-- **Coding** - first pass rate 80 ～90%（single app）+ Claude（cross check）
+- **Coding** - one-time pass rate 80 ～90%（single app）+ Claude（cross check）
 - **Study reproduction** - 80% time saved
 
 ### Y.LeCun, META, 2023.9.9
