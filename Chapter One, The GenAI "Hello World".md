@@ -5,6 +5,8 @@
 
 随着生成式人工智能（GenAI）的快速发展，企业和开发者越来越希望将大型语言模型（LLM）的强大能力应用于实际业务中。为了简化这一过程，使用中间件进行集成成为了一种高效的解决方案。本教程将带您从零开始，逐步构建一个基于LLM API的“Hello World”程序，并逐步引入提示工程（Prompt Engineering）、链式思维（Chain-of-Thought，简称CoT）、检索增强生成（RAG）、智能代理（Agent）、工具集成，以及使用多个模型工作器联合处理数据等高级功能。
 
+  <img src="Chapter1/pytorchorg.png" alt="pytorch setup" width="" />
+
 ### 教程目标
 
 - **掌握基础**：了解如何使用LLM API创建简单应用。
