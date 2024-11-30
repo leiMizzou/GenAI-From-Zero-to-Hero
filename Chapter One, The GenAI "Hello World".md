@@ -1,4 +1,4 @@
-# GenAI实战：从Hello World到Prompt Engineering、CoT、RAG与Agent
+# GenAI的“Hello World”：Chatbot, Prompt Engineering、CoT、RAG与Agent
 
 ## 引言
 
