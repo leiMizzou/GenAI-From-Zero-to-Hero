@@ -69,15 +69,16 @@ pip install deepseek langchain faiss-cpu pandas
 创建一个名为`hello_world.py`的Python文件，并输入以下代码：
 
 ```python
-# 请先安装DeepSeek SDK：`pip3 install deepseek`
+import openai
 
-from deepseek import OpenAI
+# 设置API密钥
+openai.api_key = "sk-16a90ba86cfc4dcf9402bea1309c9021"
 
-# 设置API密钥和基础URL
-client = OpenAI(api_key="<DeepSeek API Key>", base_url="https://api.deepseek.com")
+# 设置基础URL（如果需要）
+openai.api_base = "https://api.deepseek.com"
 
 def generate_response(prompt):
-    response = client.chat.completions.create(
+    response = openai.ChatCompletion.create(
         model="deepseek-chat",
         messages=[
             {"role": "system", "content": "你是一个乐于助人的助手"},
