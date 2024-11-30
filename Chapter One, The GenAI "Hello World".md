@@ -57,13 +57,83 @@ source genai_env/bin/activate
 使用`pip`安装所需的Python库。
 
 ```bash
-pip install openai langchain faiss-cpu pandas
+pip install -r requirements.txt
 ```
+
+将以下内容保存为 `requirements.txt` 文件：
+
+```plaintext
+aiohttp==3.11.8
+annotated-types==0.7.0
+anyio==4.6.2.post1
+argon2-cffi==23.1.0
+arrow==1.3.0
+asttokens==2.4.1
+attrs==24.2.0
+babel==2.16.0
+beautifulsoup4==4.12.3
+bleach==6.2.0
+duckduckgo-search==6.3.7
+executing==2.1.0
+faiss-cpu==1.8.0
+huggingface-hub==0.26.3
+ipykernel==6.29.5
+ipython==8.30.0
+ipywidgets==8.1.5
+jedi==0.19.2
+jinja2==3.1.4
+joblib==1.4.2
+jsonschema==4.23.0
+langchain==0.3.9
+langchain-community==0.3.8
+langchain-core==0.3.21
+langchain-openai==0.2.10
+langgraph==0.2.53
+matplotlib-inline==0.1.7
+nbclient==0.10.1
+nbformat==5.10.4
+numpy==1.25.0
+openai==1.55.3
+packaging==24.2
+pandas==1.5.3
+parso==0.8.4
+prompt-toolkit==3.0.48
+protobuf==5.29.0
+pyarrow==15.0.0
+pydantic==2.10.2
+pytz==2024.1
+pyyaml==6.0.2
+requests==2.32.3
+scipy==1.10.1
+sqlalchemy==2.0.35
+sympy==1.13.1
+tenacity==9.0.0
+tiktoken==0.8.0
+tokenizers==0.20.3
+torch==2.5.1
+torchvision==0.20.1
+transformers==4.46.3
+urllib3==2.2.3
+widgetsnbextension==4.0.13
+zipp==3.21.0
+```
+
+- **安装说明**：
+  - 使用 `pip` 从 `requirements.txt` 安装时，将确保依赖版本一致，避免兼容性问题。
+  - 请在虚拟环境或 Conda 环境中运行上述命令以隔离依赖。
+
+---
+
+#### 主要库说明
 
 - `openai`：用于与OpenAI或DeepSeek的API交互。
 - `langchain`：用于构建智能代理和集成工具。
 - `faiss-cpu`：用于向量检索（RAG）的向量数据库。
 - `pandas`：用于数据处理。
+- `transformers` 和 `torch`：用于自然语言处理任务和深度学习模型。
+- `duckduckgo-search`：用于集成DuckDuckGo检索工具。
+- 其他库：提供JSON处理、日志管理、API调用等多种支持功能。
+
 
 ## 第一个基于LLM API的Hello World程序
 
