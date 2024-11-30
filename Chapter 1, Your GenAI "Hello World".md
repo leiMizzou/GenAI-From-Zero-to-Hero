@@ -1,4 +1,4 @@
-# GenAI中间件实战教程：从Hello World到Prompt Engineering、CoT、RAG与Agent
+# GenAI实战：从Hello World到Prompt Engineering、CoT、RAG与Agent
 
 ## 引言
 
