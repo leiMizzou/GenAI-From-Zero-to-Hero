@@ -1,4 +1,4 @@
-# GenAI的“Hello World”：Chatbot, Prompt Engineering、CoT、RAG与Agent
+# GenAI的“Hello World”：窗口对话、提示工程、智能推理、检索增强与智能体
 
 ## 引言
 
