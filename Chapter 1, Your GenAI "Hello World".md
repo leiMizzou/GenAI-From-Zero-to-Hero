@@ -567,7 +567,7 @@ def generate_response(prompt):
 在实际应用中，应根据具体需求不断尝试和优化提示，以获得最佳的模型表现。
 
 
-## **增加检索增强生成（RAG）**
+## 增加检索增强生成（RAG）
 
 ### 1. 什么是RAG？
 
@@ -575,11 +575,11 @@ def generate_response(prompt):
 
 ### 2. 设置向量数据库（FAISS）
 
-FAISS是一个高效的相似性搜索库，适用于大规模向量检索。通过将文档转换为向量，FAISS可以快速检索与查询最相关的文档。
+FAISS（Facebook AI Similarity Search）是一个高效的相似性搜索库，适用于大规模向量检索。通过将文档转换为向量，FAISS可以快速检索与查询最相关的文档。
 
 #### 2.1 准备数据
 
-创建一个名为`documents.csv`的文件，包含一些示例文档：
+首先，您需要准备一个包含文档的CSV文件。以下是一个名为 `documents.csv` 的示例文件，包含了一些示例文档：
 
 ```csv
 id,text
@@ -588,85 +588,308 @@ id,text
 3,李包罗先生出生于1945年12月31日，河南省济源市人氏。中学就读于北京四中，大学就读于清华大学工程物理系。1968年大学毕业后分配在水电一局，在丰满水电站从事开凿涵洞的工作。1979年进清华大学计算机系软件工程专业专修班。1981年到北京协和医院计算机室，随后建立信息中心，出任主任。1991年至1992年在美国哈佛大学公共卫生学院作访问学者。李包罗先生在协和医院信息中心主任的岗位上连续工作三十年，在我国的医疗卫生信息化领域做出了开创性的卓越贡献。
 ```
 
-#### 2.2 编写`rag.ipynb`
+**注意：**
 
-创建一个名为`rag.ipynb`的文件，定义`retrieve_relevant_documents`函数：
+- 确保CSV文件中至少包含 `id` 和 `text` 两列。
+- 文本内容应尽可能详细，以便生成模型能够基于这些内容提供准确的回答。
 
-```python
-import pandas as pd
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import FAISS
+#### 2.2 编写 `rag.ipynb`
 
-# 设置API密钥和基础URL
-openai_api_key = "<YOUR_API_KEY>"
-openai_api_base = "https://api.deepseek.com"
+接下来，我们将创建一个Jupyter Notebook文件 `rag.ipynb`，用于定义 `retrieve_relevant_documents` 函数。该函数将利用FAISS进行相似性搜索，检索与查询最相关的文档。
 
-# 加载文档
-df = pd.read_csv("documents.csv")
+**步骤：**
 
-# 创建向量嵌入
-embeddings = OpenAIEmbeddings(
-    openai_api_key=openai_api_key,
-    openai_api_base=openai_api_base
-)
-vector_store = FAISS.from_texts(df['text'].tolist(), embeddings)
+1. **安装必要的库**
 
-def retrieve_relevant_documents(query, top_k=2):
-    docs = vector_store.similarity_search(query, k=top_k)
-    return [doc.page_content for doc in docs]
-```
+    在运行Notebook之前，请确保已经安装了以下库：
 
-**注意**：
+    - `langchain`
+    - `faiss-cpu`
+    - `pandas`
+    - `openai`
+    - `transformers`
+    - `torch`
+    - `python-dotenv`
 
-- 请将`<YOUR_API_KEY>`替换为您的API密钥。
+    您可以在Notebook中运行以下命令来安装这些库：
+
+    ```python
+    !pip install langchain faiss-cpu pandas openai transformers torch python-dotenv
+    ```
+
+2. **编写 `rag.ipynb`**
+
+    创建一个新的Jupyter Notebook文件 `rag.ipynb`，并在其中编写以下代码：
+
+    ```python
+    # 导入必要的库
+    import os
+    import openai
+    import numpy as np
+    import faiss
+    import pandas as pd
+    from transformers import AutoTokenizer, AutoModel
+    import torch
+    import logging
+    from dotenv import load_dotenv
+
+    # 加载环境变量
+    load_dotenv()
+
+    # 配置日志
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+    # 设置API密钥和基础URL
+    openai.api_key = os.getenv("OPENAI_API_KEY", "<YOUR_API_KEY>")
+    openai.api_base = os.getenv("OPENAI_API_BASE", "https://api.deepseek.com")
+
+    # 验证API密钥是否设置
+    if not openai.api_key:
+        logging.warning("OPENAI_API_KEY未设置。请在环境变量中设置它以启用API调用。")
+
+    # 加载嵌入模型
+    device = torch.device("cpu")  # 强制使用CPU
+    try:
+        tokenizer = AutoTokenizer.from_pretrained('sentence-transformers/all-MiniLM-L6-v2')
+        model = AutoModel.from_pretrained('sentence-transformers/all-MiniLM-L6-v2').to(device)
+        logging.info("嵌入模型加载成功！")
+    except Exception as e:
+        logging.error(f"加载嵌入模型时发生错误: {e}")
+
+    # 嵌入函数（批量处理）
+    def embed_texts(texts, batch_size=16):
+        embeddings = []
+        for i in range(0, len(texts), batch_size):
+            batch = texts[i:i+batch_size]
+            inputs = tokenizer(batch, return_tensors='pt', padding=True, truncation=True).to(device)
+            with torch.no_grad():
+                outputs = model(**inputs)
+            # 使用CLS token的输出作为句子的嵌入
+            batch_embeddings = outputs.last_hidden_state[:, 0, :].cpu().numpy()
+            embeddings.append(batch_embeddings)
+        return np.vstack(embeddings)
+
+    # 加载文档数据
+    def load_documents(file_path, nrows=100):
+        try:
+            df = pd.read_csv(file_path, nrows=nrows)
+            df = df.dropna(subset=['text'])
+            logging.info(f"成功加载了 {len(df)} 条文档。")
+            return df
+        except FileNotFoundError:
+            logging.error(f"文件 {file_path} 未找到。请检查路径是否正确。")
+            return pd.DataFrame(columns=['text'])
+        except Exception as e:
+            logging.error(f"加载文档时发生错误: {e}")
+            return pd.DataFrame(columns=['text'])
+
+    # 构建FAISS索引
+    def build_faiss_index(embeddings, use_quantization=False):
+        dimension = embeddings.shape[1]
+        
+        if use_quantization:
+            # 使用Product Quantization进行压缩
+            nlist = 100  # 聚类数
+            quantizer = faiss.IndexFlatL2(dimension)
+            index = faiss.IndexIVFPQ(quantizer, dimension, nlist, 16, 8)  # 16 bytes per vector, 8 subquantizers
+            index.train(embeddings)
+            index.add(embeddings)
+            logging.info("使用量化的FAISS索引已构建。")
+        else:
+            # 使用简单的扁平索引（不量化）
+            index = faiss.IndexFlatL2(dimension)
+            index.add(embeddings)
+            logging.info("使用扁平FAISS索引已构建。")
+        
+        return index
+
+    # 检索相关文档
+    def retrieve_relevant_documents(index, query_embedding, texts, top_k=2):
+        distances, indices = index.search(np.array([query_embedding]), top_k)
+        return [texts[i] for i in indices[0]]
+
+    # 使用DeepSeek生成回答
+    def generate_response(prompt):
+        if not openai.api_key:
+            return "API密钥未设置。请设置OPENAI_API_KEY环境变量。"
+        
+        try:
+            response = openai.ChatCompletion.create(
+                model="deepseek-chat",
+                messages=[
+                    {"role": "user", "content": prompt},
+                ]
+            )
+            return response.choices[0].message.content.strip()
+        except Exception as e:
+            return f"API调用失败: {e}"
+
+    # 主流程
+    def main(use_csv=True, file_path="documents.csv", nrows=100, use_quantization=False, top_k=2):
+        try:
+            if use_csv:
+                # 使用CSV加载文档
+                logging.info("正在加载CSV文档...")
+                df = load_documents(file_path, nrows=nrows)
+                
+                if df.empty:
+                    logging.error("未加载到任何文档。请检查CSV文件。")
+                    return
+                
+                texts = df['text'].tolist()
+            else:
+                # 使用默认文档列表
+                logging.info("未使用CSV，使用默认文档。")
+                texts = [
+                    "这是第一段默认的文本。",
+                    "这是第二段默认的文本。",
+                    "这是第三段默认的文本。"
+                ]
+                
+                if not texts:
+                    logging.error("默认文档列表为空。")
+                    return
+            
+            # 生成嵌入
+            logging.info("正在生成嵌入...")
+            embeddings = embed_texts(texts)
+            
+            # 构建FAISS索引
+            logging.info("正在构建FAISS索引...")
+            faiss_index = build_faiss_index(embeddings, use_quantization=use_quantization)
+            
+            # 获取用户输入
+            user_input = "什么是医学信息学？"
+            
+            # 生成查询嵌入
+            logging.info("正在生成查询嵌入...")
+            query_embedding = embed_texts([user_input])[0]
+            
+            # 检索相关文档
+            logging.info("正在检索相关文档...")
+            relevant_docs = retrieve_relevant_documents(faiss_index, query_embedding, texts, top_k=top_k)
+            
+            if not relevant_docs:
+                logging.warning("未检索到相关文档。")
+                return
+            
+            # 将检索到的文档作为上下文
+            context = "\n".join(relevant_docs)
+            logging.info(f"检索到的上下文内容如下：\n{context}")
+            
+            # 使用DeepSeek生成回答
+            logging.info("正在生成AI回答...")
+            prompt = f"根据以下上下文回答用户问题：\n\n上下文：\n{context}\n\n问题：\n{user_input}"
+            ai_response = generate_response(prompt)
+            
+            print("\nAI回答：")
+            print(ai_response)
+        
+        except Exception as e:
+            logging.error(f"发生错误: {e}")
+
+    # 运行主流程
+    if __name__ == "__main__":
+        main(use_csv=True, file_path="documents.csv", nrows=100, use_quantization=False, top_k=2)
+    ```
+
+    **注意：**
+
+    - 请将 `<YOUR_API_KEY>` 替换为您的实际OpenAI API密钥。
+    - 确保 `documents.csv` 文件位于当前目录中，或者提供正确的文件路径。
+
+**功能解释：**
+
+- **导入必要的库**：包括OpenAI、FAISS、Pandas、Transformers、Torch等。
+- **加载环境变量**：使用 `dotenv` 库加载 `.env` 文件中的API密钥和基础URL。
+- **配置日志**：使用 `logging` 模块记录程序运行日志，便于调试和监控。
+- **设置API密钥和基础URL**：从环境变量中读取OpenAI的API密钥和基础URL。
+- **加载嵌入模型**：使用 `sentence-transformers/all-MiniLM-L6-v2` 模型生成文本嵌入。
+- **定义嵌入函数**：`embed_texts` 函数批量处理文本，生成嵌入向量。
+- **加载文档数据**：`load_documents` 函数从CSV文件中加载文档。
+- **构建FAISS索引**：`build_faiss_index` 函数构建FAISS向量数据库，可以选择是否使用量化。
+- **检索相关文档**：`retrieve_relevant_documents` 函数根据查询嵌入向量，从FAISS索引中检索最相关的文档。
+- **生成回答**：`generate_response` 函数调用OpenAI的ChatCompletion API，根据上下文生成回答。
+- **主流程**：`main` 函数整合了上述所有步骤，根据 `use_csv` 参数决定是否使用CSV文件加载文档，并生成AI回答。
 
 ### 3. 集成RAG到程序中
 
-#### 3.1 修改`hello_world.py`
+现在，我们将上述代码集成到您的主程序中，假设您的主程序文件名为 `hello_world.py`。
 
-更新`hello_world.py`，引入RAG功能：
+#### 3.1 修改 `hello_world.py`
+
+以下是修改后的 `hello_world.py`，引入了RAG功能：
 
 ```python
-import openai
-from rag import retrieve_relevant_documents
-from prompt_template import create_prompt
-
-# 设置API密钥和基础URL
-openai.api_key = "<YOUR_API_KEY>"
-openai.api_base = "https://api.deepseek.com"
-
-def generate_response(prompt):
-    # 检索相关文档
-    relevant_docs = retrieve_relevant_documents(prompt)
-    context = " ".join(relevant_docs)
-    # 创建提示
-    combined_prompt = create_prompt(prompt, context)
-    # 生成响应
-    response = openai.ChatCompletion.create(
-        model="deepseek-chat",
-        messages=[
-            {"role": "system", "content": combined_prompt},
-        ]
-    )
-    return response.choices[0].message.content.strip()
+from rag import main
 
 if __name__ == "__main__":
-    user_input = "什么是医学信息学？"
-    ai_response = generate_response(user_input)
-    print(f"AI: {ai_response}")
+    # 使用RAG功能生成回答
+    main(use_csv=True, file_path="documents.csv", nrows=100, use_quantization=False, top_k=2)
 ```
 
-### 4. 运行程序
+#### 3.2 运行程序
 
-```bash
-python hello_world.py
-```
+完成上述步骤后，您可以运行 `hello_world.py` 来启动RAG功能。
 
-**预期输出**：
+**步骤：**
 
-```
-AI: 医学信息学是一门学科，研究如何有效地管理和利用医疗信息。它结合了医学、信息科学和计算机技术，旨在改进医疗数据的收集、存储、检索和应用，从而提升医疗服务的质量和效率。
-```
+1. **确保所有依赖已安装**
+
+    在终端或命令行中，激活您的虚拟环境（如果使用的话），然后安装所有必要的库：
+
+    ```bash
+    pip install transformers torch faiss-cpu pandas openai langchain python-dotenv
+    ```
+
+2. **创建 `.env` 文件**
+
+    在 `hello_world.py` 所在的目录下创建一个 `.env` 文件，并添加以下内容：
+
+    ```env
+    OPENAI_API_KEY=sk-您的API密钥
+    OPENAI_API_BASE=https://api.deepseek.com
+    ```
+
+3. **运行程序**
+
+    在终端或命令行中，导航到 `hello_world.py` 所在的目录，并运行：
+
+    ```bash
+    python hello_world.py
+    ```
+
+    **预期输出**：
+
+    ```
+    AI回答：
+    医学信息学是一门学科，研究如何有效地管理和利用医疗信息。它结合了医学、信息科学和计算机技术，旨在提升医疗数据的收集、存储、检索和应用效率，从而改善医疗服务质量。
+    ```
+
+    **解释：**
+
+    - 程序将加载CSV文件中的文档，生成嵌入向量，并构建FAISS索引。
+    - 根据用户输入的问题，生成查询嵌入，检索相关文档。
+    - 将检索到的文档作为上下文，调用OpenAI的ChatCompletion API生成回答。
+
+### 4. 总结
+
+通过以上步骤，您已经成功地将检索增强生成（RAG）功能集成到您的程序中。RAG能够有效地提高模型回答的准确性和相关性，特别是在需要结合特定领域知识的情况下。
+
+**关键点总结：**
+
+- **理解RAG**：RAG结合了检索和生成模型，通过检索相关文档来增强生成内容的准确性和相关性。
+- **设置FAISS向量数据库**：利用FAISS进行高效的相似性搜索，快速检索与查询相关的文档。
+- **准备数据**：通过CSV文件或默认文档列表提供文档数据。
+- **编写代码**：包括加载嵌入模型、生成嵌入、构建FAISS索引、检索文档和生成回答。
+
+**附加优化与建议：**
+
+- **使用环境变量管理API密钥**：使用 `.env` 文件与 `python-dotenv` 库来管理环境变量，确保API密钥的安全性。
+- **增加错误处理和日志记录**：通过 `logging` 模块记录详细的日志信息，帮助调试和维护。
+- **保存和加载FAISS索引**：在处理大型数据集时，可以将索引保存到磁盘，避免重复生成。
+- **调整批量大小以优化性能**：根据系统资源，调整嵌入生成的批量大小。
+
 
 ## 增加链式思维（Chain-of-Thought, CoT）
 
