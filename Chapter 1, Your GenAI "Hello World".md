@@ -50,10 +50,10 @@ source genai_env/bin/activate
 使用`pip`安装所需的Python库。
 
 ```bash
-pip install deepseek langchain faiss-cpu pandas
+pip install openai langchain faiss-cpu pandas
 ```
 
-- `deepseek`：用于与DeepSeek的API交互。
+- `openai`：用于与DeepSeek的API交互。
 - `langchain`：用于构建智能代理和集成工具。
 - `faiss-cpu`：用于向量检索（RAG）的向量数据库。
 - `pandas`：用于数据处理。
@@ -89,7 +89,7 @@ def generate_response(prompt):
     return response.choices[0].message.content.strip()
 
 if __name__ == "__main__":
-    user_input = "你好，你怎么样？"
+    user_input = "什么是医学信息学？"
     ai_response = generate_response(user_input)
     print(f"AI: {ai_response}")
 ```
@@ -105,7 +105,19 @@ python hello_world.py
 **预期输出**：
 
 ```
-AI: 你好！我很好，谢谢你的关心。有什么我可以帮忙的吗？
+AI: 医学信息学（Medical Informatics）是一门跨学科的科学，它结合了医学、信息技术和管理学，旨在通过信息技术的应用来改善医疗保健的各个方面。这门学科主要关注如何收集、存储、检索、分析和利用医疗数据和信息，以支持临床决策、提高医疗服务的效率和质量，以及促进医学研究和教育。
+
+医学信息学的主要应用领域包括：
+
+1. **电子健康记录（EHR）**：通过电子系统记录和管理患者的医疗信息，提高信息的准确性和可访问性。
+2. **临床决策支持系统（CDSS）**：为医生和其他医疗专业人员提供实时、基于证据的决策支持。
+3. **健康信息系统（HIS）**：管理和分析医院和其他医疗机构的运营数据，优化资源配置和流程管理。
+4. **生物信息学**：分析和解释生物数据，如基因组数据，以支持医学研究和个性化医疗。
+5. **公共卫生信息系统**：收集和分析公共卫生数据，用于疾病监测、预防和控制。
+6. **医学教育**：利用信息技术改进医学教育和培训，如模拟训练和远程教育。
+
+医学信息学的专业人员通常需要具备医学、计算机科学、统计学和信息管理等多方面的知识和技能。随着信息技术的不断发展，医学信息学在现代医疗保健体系中的作用越来越重要。
+
 ```
 
 ## 增加提示工程（Prompt Engineering）
