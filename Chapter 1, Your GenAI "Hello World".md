@@ -568,7 +568,7 @@ def generate_response(prompt):
 在实际应用中，应根据具体需求不断尝试和优化提示，以获得最佳的模型表现。
 
 
-## 增加链式思维（Chain-of-Thought, CoT）
+## 增加思维推理技术
 
 ### 1. 什么是链式思维（CoT）？
 
