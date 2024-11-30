@@ -1,4 +1,4 @@
-# GenAI时代的“Hello World” 
+# GenAI的“Hello World” 
 --窗口对话、提示工程、思维推理、检索增强与智能体
 
 ## 引言
