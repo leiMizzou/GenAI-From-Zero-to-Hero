@@ -133,7 +133,7 @@ zipp==3.21.0
 - `duckduckgo-search`：用于集成DuckDuckGo检索工具。
 - 其他库：提供JSON处理、日志管理、API调用等多种支持功能。
 * 其中Pytorch的安装出现问题的概率较高，推荐访问Pytorch.org主页选择合适的配置（如下图所示）
-* 
+  <img src="charpter1/pytorchorg.png" alt="pytorch setup" width="" />
 
 ## 第一个基于LLM API的Hello World程序
 
