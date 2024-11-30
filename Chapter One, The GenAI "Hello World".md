@@ -122,7 +122,6 @@ zipp==3.21.0
   - 使用 `pip` 从 `requirements.txt` 安装时，将确保依赖版本一致，避免兼容性问题。
   - 请在虚拟环境或 Conda 环境中运行上述命令以隔离依赖。
 
----
 
 #### 主要库说明
 
@@ -133,7 +132,8 @@ zipp==3.21.0
 - `transformers` 和 `torch`：用于自然语言处理任务和深度学习模型。
 - `duckduckgo-search`：用于集成DuckDuckGo检索工具。
 - 其他库：提供JSON处理、日志管理、API调用等多种支持功能。
-
+* 其中Pytorch的安装出现问题的概率较高，推荐访问Pytorch.org主页选择合适的配置（如下图所示）
+* 
 
 ## 第一个基于LLM API的Hello World程序
 
