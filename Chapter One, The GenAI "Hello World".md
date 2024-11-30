@@ -135,6 +135,8 @@ zipp==3.21.0
 - 其中Pytorch的安装出现问题的概率较高，推荐访问 http://pytorch.org 主页选择合适的配置（如下图所示）
   <img src="Chapter1/pytorchorg.png" alt="pytorch setup" width="" />
 
+---
+
 ## 第一个基于LLM API的Hello World程序
 
 ### 1. 获取DeepSeek API密钥
