@@ -1129,117 +1129,264 @@ if __name__ == "__main__":
 - **保存和加载FAISS索引**：在处理大型数据集时，可以将索引保存到磁盘，避免重复生成。
 - **调整批量大小以优化性能**：根据系统资源，调整嵌入生成的批量大小。
 
-## 增加智能代理（Agent）与工具集成
+---
 
-### 1. 什么是智能代理（Agent）？
+# 增加智能代理（Agent）与工具集成
 
-智能代理（Agent）是在特定任务中自动执行操作的智能实体。在GenAI中，Agent可以管理对话状态、调用外部工具或API以完成复杂任务。
+## 1. 什么是智能代理（Agent）？
 
-### 2. 使用LangChain中的Agent
+智能代理（Agent）是在特定任务中自动执行操作的智能实体。在生成式人工智能（GenAI）中，Agent 可以管理对话状态、调用外部工具或 API 以完成复杂任务。它能够理解用户的意图，选择合适的工具来完成任务，并生成相应的回答。
 
-#### 2.1 编写`agent_module.py`
+## 2. 使用 LangChain 和 LangGraph 构建 Agent
 
-创建一个名为`agent_module.py`的Python文件，并输入以下代码：
+### 2.1 编写 `agent_module.py`
+
+创建一个名为 `agent_module.py` 的 Python 文件，并输入以下代码：
 
 ```python
-from langchain.agents import initialize_agent, Tool, AgentType
-from langchain.llms import OpenAI
-from rag import retrieve_relevant_documents
+from typing import (
+    Annotated,
+    Sequence,
+    TypedDict,
+)
+from langchain_core.messages import BaseMessage
+from langgraph.graph.message import add_messages
 
-# 设置API密钥和基础URL
-llm = OpenAI(
-    openai_api_key="<YOUR_API_KEY>",
-    openai_api_base="https://api.deepseek.com"
+
+class AgentState(TypedDict):
+    """代理的状态。"""
+
+    # add_messages 是一个 reducer
+    # 参见 https://langchain-ai.github.io/langgraph/concepts/low_level/#reducers
+    messages: Annotated[Sequence[BaseMessage], add_messages]
+    
+from langchain_openai import ChatOpenAI
+from langchain_core.tools import tool
+
+import os
+from dotenv import load_dotenv
+
+# 加载环境变量（如果有）
+load_dotenv()
+
+# 设置 API 密钥和基础 URL
+model = ChatOpenAI(
+    model="deepseek-chat",
+    api_key="YOUR_API_KEY",  # 请替换为您的实际 API 密钥
+    base_url="https://api.deepseek.com"
 )
 
-def search_documents(query):
-    docs = retrieve_relevant_documents(query)
-    return "\n".join(docs)
+# 引入 DuckDuckGoSearchRun
+from langchain_community.tools import DuckDuckGoSearchRun
 
-tools = [
-    Tool(
-        name="DocumentSearch",
-        func=search_documents,
-        description="用于搜索相关文档的工具。"
+# 初始化 DuckDuckGo 搜索工具
+search = DuckDuckGoSearchRun()
+
+@tool
+def get_weather(input: str):
+    """调用以获取特定位置的天气。"""
+    location = input
+    if any([city in location.lower() for city in ["sf", "san francisco", "旧金山"]]):
+        return "旧金山天气晴朗，但如果你是双子座，最好小心点 😈。"
+    else:
+        # 使用 DuckDuckGoSearchRun 获取天气信息
+        query = f"{location} 天气"
+        try:
+            result = search.invoke(query)
+            return f"{location}的天气信息：{result}"
+        except Exception as e:
+            return f"获取天气信息时发生错误：{str(e)}"
+
+@tool
+def get_time(input: str):
+    """调用以获取特定位置的当前时间。"""
+    location = input
+    if any([city in location.lower() for city in ["new york", "nyc", "纽约"]]):
+        return "纽约现在是上午10点。"
+    else:
+        return f"我不确定 {location} 的当前时间"
+
+tools = [get_weather, get_time]
+
+# 绑定工具到模型
+model = model.bind_tools(tools)
+
+import json
+from langchain_core.messages import ToolMessage, SystemMessage
+from langchain_core.runnables import RunnableConfig
+
+tools_by_name = {tool.name: tool for tool in tools}
+
+# 定义工具节点
+def tool_node(state: AgentState):
+    outputs = []
+    for tool_call in state["messages"][-1].tool_calls:
+        input_value = tool_call["args"]["input"]
+        tool_result = tools_by_name[tool_call["name"]].invoke(input=input_value)
+        outputs.append(
+            ToolMessage(
+                content=json.dumps(tool_result, ensure_ascii=False),
+                name=tool_call["name"],
+                tool_call_id=tool_call["id"],
+            )
+        )
+    # 返回新的消息列表
+    return {"messages": outputs}
+
+# 定义调用模型的节点
+def call_model(
+    state: AgentState,
+    config: RunnableConfig,
+):
+    system_prompt = SystemMessage(
+        "你是一个乐于助人的 AI 助手，请尽你所能回应用户的查询！"
     )
-]
+    # 只使用最近的消息
+    recent_messages = [state["messages"][-1]]
+    response = model.invoke([system_prompt] + recent_messages, config)
+    return {"messages": [response]}
 
-# 初始化Agent
-agent = initialize_agent(tools, llm, agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, verbose=True)
+# 定义决定是否继续的条件边
+def should_continue(state: AgentState):
+    last_message = state["messages"][-1]
+    # 如果没有函数调用，那么结束
+    if not last_message.tool_calls:
+        return "end"
+    else:
+        return "continue"
 
-def get_agent_response(query):
-    response = agent.run(query)
-    return response
+from langgraph.graph import StateGraph, END
+
+# 定义新的图
+workflow = StateGraph(AgentState)
+
+# 添加节点
+workflow.add_node("agent", call_model)
+workflow.add_node("tools", tool_node)
+
+# 设置入口点为 `agent`
+workflow.set_entry_point("agent")
+
+# 添加条件边
+workflow.add_conditional_edges(
+    "agent",
+    should_continue,
+    {
+        "continue": "tools",
+        "end": END,
+    },
+)
+
+# 添加从 `tools` 到 `agent` 的边
+workflow.add_edge("tools", "agent")
+
+# 编译并可视化图（可选）
+graph = workflow.compile()
+
+# 用于漂亮地格式化流的辅助函数
+def print_stream(stream):
+    for s in stream:
+        messages = s.get("messages", [])
+        for message in messages:
+            if isinstance(message, tuple):
+                print(message)
+            else:
+                message.pretty_print()
+
+# 定义获取 Agent 响应的函数
+def get_agent_response(user_input):
+    inputs = {"messages": [("user", user_input)]}
+    stream = graph.stream(inputs, stream_mode="values")
+    print_stream(stream)
 
 if __name__ == "__main__":
-    user_query = "什么是医学信息学？"
-    response = get_agent_response(user_query)
-    print(f"Agent: {response}")
+    user_query = "北京的天气怎么样？"
+    get_agent_response(user_query)
 ```
 
-#### 2.2 修改`hello_world.py`
-
-更新`hello_world.py`，引入Agent功能：
-
-```python
-from agent_module import get_agent_response
-
-if __name__ == "__main__":
-    user_input = "什么是医学信息学？"
-    # 使用Agent获取响应
-    ai_response = get_agent_response(user_input)
-    print(f"Agent: {ai_response}")
-```
-
-#### 2.3 运行程序
+### 2.2 运行程序
 
 ```bash
-python hello_world.py
+python agent_module.py
 ```
 
 **预期输出**：
 
 ```
-Agent: 医学信息学是一门学科，研究如何有效地管理和利用医疗信息。它结合了医学、信息科学和计算机技术，旨在提升医疗数据的收集、存储、检索和应用效率，从而改善医疗服务质量。
+=============================== Human Message =================================
+
+北京的天气怎么样？
+
+================================ Ai Message ==================================
+
+Tool Calls:
+  get_weather (call_id)
+    Call ID: call_id
+    Args:
+      input: 北京的天气怎么样？
+
+=============================== Tool Message =================================
+Name: get_weather
+
+"北京的天气信息：......"
+
+================================ Ai Message ==================================
+
+北京的天气信息：......
 ```
 
-## 增加使用多个模型工作器联合处理数据的例子
+### 2.3 代码解释
 
-### 1. 实现多个模型工作器的示例
+- **工具定义**：我们使用 `@tool` 装饰器定义了两个工具函数 `get_weather` 和 `get_time`，分别用于获取天气和时间信息。
 
-#### 1.1 编写`multi_worker.py`
+- **工具节点**：`tool_node` 函数根据模型生成的函数调用，执行相应的工具函数，并返回结果。
 
-创建一个名为`multi_worker.py`的Python文件，并输入以下代码：
+- **模型调用节点**：`call_model` 函数调用语言模型，生成对用户输入的响应。
+
+- **工作流图**：使用 `StateGraph` 定义了 Agent 的工作流程，通过条件边在模型和工具节点之间循环，直到生成最终的响应。
+
+- **消息打印**：`print_stream` 函数用于格式化和打印消息，使输出更加清晰。
+
+## 3. 增加使用多个模型工作器联合处理数据的例子
+
+### 3.1 实现多个模型工作器的示例
+
+在复杂的应用场景中，可能需要多个模型或组件协同工作，例如同时进行信息检索和响应生成。下面展示如何使用多线程来实现这一点。
+
+#### 3.1.1 编写 `multi_worker.py`
+
+创建一个名为 `multi_worker.py` 的 Python 文件，并输入以下代码：
 
 ```python
 import threading
-import openai
-from rag import retrieve_relevant_documents
-from prompt_template import create_prompt
+from langchain_openai import ChatOpenAI
+from langchain_community.tools import DuckDuckGoSearchRun
 
-# 设置API密钥和基础URL
-openai.api_key = "<YOUR_API_KEY>"
-openai.api_base = "https://api.deepseek.com"
+# 设置 API 密钥和基础 URL
+model = ChatOpenAI(
+    model="deepseek-chat",
+    api_key="YOUR_API_KEY",
+    base_url="https://api.deepseek.com"
+)
+
+# 初始化搜索工具
+search = DuckDuckGoSearchRun()
 
 def retrieval_worker(query, results, index):
     """
-    信息检索工作器：负责检索相关文档。
+    信息检索工作器：负责检索相关信息。
     """
-    relevant_docs = retrieve_relevant_documents(query)
-    results[index] = " ".join(relevant_docs)
+    result = search.invoke(query)
+    results[index] = result
 
 def generation_worker(prompt, context, results, index):
     """
     响应生成工作器：基于检索到的信息生成响应。
     """
-    combined_prompt = create_prompt(prompt, context)
-    response = openai.ChatCompletion.create(
-        model="deepseek-chat",
-        messages=[
-            {"role": "system", "content": combined_prompt},
-        ]
-    )
-    results[index] = response.choices[0].message.content.strip()
+    system_prompt = "你是一个乐于助人的 AI 助手，请根据以下信息回答用户的问题。"
+    full_prompt = f"{system_prompt}\n\n上下文信息：{context}\n\n用户提问：{prompt}"
+    response = model.invoke(full_prompt)
+    results[index] = response.content.strip()
 
 def generate_response_with_workers(prompt):
     """
@@ -1267,24 +1414,10 @@ if __name__ == "__main__":
     print(f"AI: {ai_response}")
 ```
 
-#### 1.2 修改`hello_world.py`
-
-更新`hello_world.py`，引入多模型工作器功能：
-
-```python
-from multi_worker import generate_response_with_workers
-
-if __name__ == "__main__":
-    user_input = "什么是医学信息学？"
-    # 使用多个模型工作器联合获取响应
-    ai_response = generate_response_with_workers(user_input)
-    print(f"AI: {ai_response}")
-```
-
-#### 1.3 运行程序
+#### 3.1.2 运行程序
 
 ```bash
-python hello_world.py
+python multi_worker.py
 ```
 
 **预期输出**：
@@ -1293,17 +1426,22 @@ python hello_world.py
 AI: 医学信息学是一门结合医学、信息科学和计算机技术的学科，研究如何有效地管理和利用医疗信息。其目标是改进医疗数据的收集、存储、检索和应用，从而提升医疗服务的质量和效率。
 ```
 
-## 总结
+#### 3.1.3 代码解释
 
-通过本教程，您已经学习了如何从一个简单的基于LLM API的“Hello World”程序开始，逐步集成提示工程（Prompt Engineering）、检索增强生成（RAG）、链式思维（CoT）、智能代理（Agent）、工具集成，以及使用多个模型工作器联合处理数据，构建一个功能强大的GenAI中间件应用。
+- **信息检索工作器**：`retrieval_worker` 函数使用 `DuckDuckGoSearchRun` 进行信息检索，将结果存储在共享的 `results` 列表中。
+
+- **响应生成工作器**：`generation_worker` 函数使用检索到的上下文信息，调用模型生成最终的响应。
+
+- **多线程**：使用 Python 的 `threading` 模块并行执行信息检索和响应生成，提高处理效率。
+
+## 4. 总结
+
+通过本教程，您已经学习了如何从一个简单的基于 LLM API 的 “Hello World” 程序开始，逐步集成提示工程（Prompt Engineering）、检索增强生成（RAG）、链式思维（CoT）、智能代理（Agent）、工具集成，以及使用多个模型工作器联合处理数据，构建一个功能强大的生成式 AI 中间件应用。
 
 我们确保了所有代码中的变量、函数和模块都已正确定义，代码逻辑清晰，易于理解和运行。
 
-希望本教程能够帮助您在实际项目中高效地应用GenAI中间件，实现业务智能化转型。
+希望本教程能够帮助您在实际项目中高效地应用生成式 AI 中间件，实现业务智能化转型。
 
----
-
-如果您在实施过程中遇到任何问题，欢迎与我联系。
 
 # 附录
 
