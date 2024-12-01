@@ -1,5 +1,6 @@
 # LLMs-From-Zero-to-Hero（LLMs 从狗熊到英雄）
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ## 项目简介
 
 本项目致力于深入探讨生成式人工智能(Generative AI, GenAI)的核心技术、发展趋势和实际应用。通过系统化的科普、案例分析和实践指导，我们希望帮助开发者、研究人员和企业用户全面掌握生成式 AI 的原理与实践方法。在这个快速发展的领域，本项目将成为您了解最新技术、选择合适方案和应用 AI 技术的指南。
