@@ -1,6 +1,6 @@
 ## 从Pipeline到端到端——Transformer模型与开源生态的演进(From Pipeline to End-to-End—The Evolution of Transformer Models and the Open Source Ecosystem)
 
----
+[视频分享](https://www.bilibili.com/video/av113371651244937![image](https://github.com/user-attachments/assets/9bb058e2-6ff2-47a2-9378-e4b2e36b2a72))
 
 ### 从“Pipeline”到“端到端”：基于transformer模型的Token流生产
 - **Imagenet（Feifei Li）和AlexNet@2012（Alex,Ilya,Hinton）**
