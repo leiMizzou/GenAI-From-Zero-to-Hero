@@ -1,4 +1,4 @@
-## 从Pipeline到端到端——Transformer模型与开源生态的演进(From Pipeline to End-to-End—The Evolution of Transformer Models and the Open Source Ecosystem)
+## 序：开源GenAI生态与医疗信息化
 
 [本主题B站视频分享](https://www.bilibili.com/video/av113371651244937)
 
