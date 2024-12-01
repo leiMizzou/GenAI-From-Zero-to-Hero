@@ -29,7 +29,12 @@
 
 在开始编写代码之前，我们需要配置开发环境。
 
-### 1. 安装Python
+### 1. 开发环境
+
+-- 代码编辑器：VSCode(Visual Studio Code)
+-- LLM API: [DeepSeek V2.5 API](https://www.deepseek.com/) 
+
+### 2. 安装Python及创建虚拟环境
 
 确保您的系统已经安装了Python 3.7或以上版本。您可以在终端或命令行中输入以下命令来检查：
 
@@ -38,9 +43,6 @@ python --version
 ```
 
 如果尚未安装，请前往[Python官网](https://www.python.org/downloads/)下载安装包并安装。
-
-### 2. 创建虚拟环境
-
 为了避免依赖冲突，建议为项目创建一个虚拟环境。
 
 ```bash
