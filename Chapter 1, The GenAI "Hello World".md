@@ -1,5 +1,5 @@
 # “Hello GenAI World” – 创建你的第一个生成式AI程序
-- 窗口对话、提示工程、思维推理、检索增强与智能体
+-- 窗口对话、提示工程、思维推理、检索增强与智能体
 
 <img src="Chapter1/helloworld.png" alt="pytorch setup" width="" />
 
