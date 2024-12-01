@@ -51,7 +51,7 @@
 
 - **准确性**超过了业界公认的高标准的欧洲中期天气预报中心（ECMWF）的高分辨率天气模拟系统（HRES）
 - **GraphCast进行10天的预测仅需不到一分钟的时间**，传统方法如HRES可能需要数小时的超级计算机计算
-![GraphCast](./images/preface-3.png)
+![GraphCast](./Preface/images/preface-3.png)
 
 ### ChatGPT4上线（2023.2）：调研、编码与论文重现（知识储备是使用说明书，不足迭代弥补）
 
@@ -60,10 +60,10 @@
 - **Study reproduction** - 80% time saved
 
 ### Y.LeCun, META, 2023.9.9
-<img src="./images/preface-4.png" alt="Lecun2023" width="" />
+<img src="./Preface/images/preface-4.png" alt="Lecun2023" width="" />
 
 ### 开源社区的蓬勃发展，以github为例：
-- **GenAI项目的快速增加**：<img src="./images/preface-5.png" alt="github" width="" />
+- **GenAI项目的快速增加**：<img src="./Preface/images/preface-5.png" alt="github" width="" />
 - **LLMs模型的一键下载部署与训练**：[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md)
 - **LLMs高速推理服务引擎**：[vLLM](https://github.com/vllm-project/vllm)
 - **企业级LLMs中间件及RAG/Agent应用框架**：[Langchain-Chatchat](https://github.com/chatchat-space/Langchain-Chatchat), [RagFlow](https://github.com/infiniflow/ragflow/blob/main/README_zh.md)
@@ -77,7 +77,7 @@
   - [GitHub链接](https://github.com/CBLUEbenchmark/CBLUE)
 - **各种内容精选**：[StarryDivineSky](https://github.com/wuwenjie1992/StarryDivineSky)
 - **多模态与硬件**
-<img src="./images/preface-6.png" alt="HITSenarios" width="" />
+<img src="./Preface/images/preface-6.png" alt="HITSenarios" width="" />
 
 ### GenAI技术生态与临床医疗场景有众多结合可能：
 - **本质是用数学方法对人类文本语义进行压缩和还原**：信息获取、处理、分析、生成；场景关键信息的获取
@@ -96,7 +96,7 @@
 - **通用 vs 垂直**，小模型（<3B）finetune是例外
 - **中文医疗信息处理评测基准** CBLUE数据集
 - **八成的选择，两成的价格**
-<img src="./images/preface-7.png" alt="cost" width="" />
+<img src="./Preface/images/preface-7.png" alt="cost" width="" />
 
 ### 教育（从Zero到Hero）
 
@@ -109,7 +109,7 @@
 ### Q&A, Thanks!
 
 - **开源项目分享群**
-<img src="./images/vxgroup.png" alt="vxgroup" width="120" />
+<img src="./Preface/images/vxgroup.png" alt="vxgroup" width="120" />
 
 - **个人微信**
-<img src="./images/vx.png" alt="vx" width="120" />
+<img src="./Preface/images/vx.png" alt="vx" width="120" />
