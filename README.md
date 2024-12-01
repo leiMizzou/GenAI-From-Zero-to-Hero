@@ -1,5 +1,4 @@
-# LLMs-From-Zero-to-Hero
-# LLMs从狗熊到英雄
+# LLMs-From-Zero-to-Hero（LLMs从狗熊到英雄）
 
 ## 项目简介
 
