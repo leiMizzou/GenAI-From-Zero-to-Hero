@@ -32,7 +32,7 @@
 ### 1. 开发环境
 
 - **代码编辑器**：VSCode(Visual Studio Code)
-- **LLM API**: [DeepSeek V2.5 API](https://www.deepseek.com/)
+- **LLM API**：[DeepSeek V2.5 API](https://www.deepseek.com/)
 - **数据库**：SQLite/PostgreSQL
 
 ### 2. 安装Python及创建虚拟环境
