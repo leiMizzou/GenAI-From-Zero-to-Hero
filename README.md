@@ -1,4 +1,4 @@
-# LLMs-From-Zero-to-Hero（LLMs 从狗熊到英雄）
+# LLMs-From-Zero-to-Hero（LLMs 从小白到英雄）
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ## 项目简介
