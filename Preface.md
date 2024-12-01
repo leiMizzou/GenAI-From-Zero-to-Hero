@@ -92,7 +92,7 @@
 - **院内项目**，低门槛启动，四位数的训推一体机可支持300亿开源LLMs部署，大厂API更省（百万Tokon/元级别）
 - **ChatGPT平替装机宝典** [链接](https://mp.weixin.qq.com/s/p49KXh9cGich6D40J0bc5Q)
 - **Page Copilot**
-- **Prompt Engineering > RAG > AI Search > Agent > Finetune**
+- **Prompt Engineering > RAG > C/T/GOT > Agent > Finetune**
 - **通用 vs 垂直**，小模型（<3B）finetune是例外
 - **中文医疗信息处理评测基准** CBLUE数据集
 - **八成的选择，两成的价格**
