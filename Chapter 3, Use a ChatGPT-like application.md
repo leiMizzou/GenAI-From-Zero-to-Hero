@@ -1,4 +1,4 @@
-# ChatGPT 使用教程
+# Chapter 3, 类ChatGPT应用教程
 
 ## 目录
 
