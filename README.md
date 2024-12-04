@@ -1,4 +1,5 @@
-# GenAI-From-Zero-to-Hero（GenAI从小白到英雄）
+# GenAI-From-Zero-to-Hero
+ - GenAI从小白到英雄
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ## 项目简介
