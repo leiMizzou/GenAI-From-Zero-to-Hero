@@ -219,19 +219,19 @@ zipp==3.21.0
 创建一个名为`hello_world.py`的Python文件，并输入以下代码：
 
 ```python
-import openai
 
-# 设置API密钥
-openai.api_key = "<YOUR_API_KEY>"
+from openai import OpenAI
 
-# 设置基础URL（如果需要）
-openai.api_base = "https://api.deepseek.com"
+# 设置API密钥和基础URL
+llm = OpenAI(
+    api_key="sk-16a90ba86cfc4dcf9402bea1309c9021",
+    base_url="https://api.deepseek.com"
+)
 
 def generate_response(prompt):
-    response = openai.ChatCompletion.create(
+    response = llm.chat.completions.create(
         model="deepseek-chat",
         messages=[
-            {"role": "system", "content": "你是一个乐于助人的助手"},
             {"role": "user", "content": prompt},
         ]
     )
@@ -241,6 +241,7 @@ if __name__ == "__main__":
     user_input = "你好，你怎么样？"
     ai_response = generate_response(user_input)
     print(f"AI: {ai_response}")
+
 ```
 
 **注意**：
@@ -285,7 +286,7 @@ AI: 你好！我很好，谢谢你的关心。有什么我可以帮忙的吗？
 
 ```python
 def generate_response(prompt):
-    response = openai.ChatCompletion.create(
+    response = llm.chat.completions.create(
         model="deepseek-chat",
         messages=[
             {"role": "user", "content": prompt},
@@ -340,7 +341,7 @@ def generate_response(prompt):
 
 ```python
 def generate_response(prompt):
-    response = openai.ChatCompletion.create(
+    response = llm.chat.completions.create(
         model="deepseek-chat",
         messages=[
             {"role": "system", "content": "你是一个AI助手，请以项目符号的形式列出答案的要点。"},
@@ -381,7 +382,7 @@ def generate_response(prompt):
 
 ```python
 def generate_response(prompt, context):
-    response = openai.ChatCompletion.create(
+    response = llm.chat.completions.create(
         model="deepseek-chat",
         messages=[
             {"role": "system", "content": f"你是一个AI助手，根据以下上下文回答问题：\n\n{context}"},
@@ -432,7 +433,7 @@ def generate_response(prompt):
         "答：神经网络是一种模拟人脑结构的计算模型，由层次排列的节点或“神经元”组成，用于识别复杂模式和数据关系。\n\n"
     )
     system_prompt = f"你是一个AI助手，请按照以下示例的格式回答问题：\n\n{examples}"
-    response = openai.ChatCompletion.create(
+    response = llm.chat.completions.create(
         model="deepseek-chat",
         messages=[
             {"role": "system", "content": system_prompt},
@@ -468,7 +469,7 @@ def generate_response(prompt):
 
 ```python
 def generate_response(prompt):
-    response = openai.ChatCompletion.create(
+    response = llm.chat.completions.create(
         model="deepseek-chat",
         max_tokens=50,
         messages=[
@@ -505,7 +506,7 @@ def generate_response(prompt):
 
 ```python
 def generate_response(prompt):
-    response = openai.ChatCompletion.create(
+    response = llm.chat.completions.create(
         model="deepseek-chat",
         messages=[
             {"role": "system", "content": "你是一个幽默风趣的AI助手，在回答中加入适当的幽默元素。"},
@@ -541,7 +542,7 @@ def generate_response(prompt):
 
 ```python
 def generate_response(prompt):
-    response = openai.ChatCompletion.create(
+    response = llm.chat.completions.create(
         model="deepseek-chat",
         messages=[
             {"role": "system", "content": "你是一个AI助手，请先列出解题步骤，然后给出答案。"},
@@ -584,7 +585,7 @@ def generate_response(prompt):
 
 ```python
 def generate_response(prompt):
-    response = openai.ChatCompletion.create(
+    response = ollm.chat.completions.create(
         model="deepseek-chat",
         messages=[
             {"role": "system", "content": "你是物理学家阿尔伯特·爱因斯坦，请用第一人称回答问题。"},
@@ -620,7 +621,7 @@ def generate_response(prompt):
 
 ```python
 def generate_response(prompt, context):
-    response = openai.ChatCompletion.create(
+    response = llm.chat.completions.create(
         model="deepseek-chat",
         messages=[
             {
@@ -665,7 +666,7 @@ def generate_response(prompt, context):
 
 ```python
 def generate_response(prompt):
-    response = openai.ChatCompletion.create(
+    response = llm.chat.completions.create(
         model="deepseek-chat",
         messages=[
             {
