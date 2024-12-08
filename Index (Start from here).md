@@ -1,4 +1,4 @@
-## 序：开源GenAI生态与医疗信息化
+## 索引：开源GenAI生态与医疗信息化
 
 [本主题B站视频分享](https://www.bilibili.com/video/av113371651244937)
 
