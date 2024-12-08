@@ -5,8 +5,9 @@
 ### 从“Pipeline”到“端到端”：基于transformer模型的Token流生产
 - **Imagenet（Feifei Li）和AlexNet@2012（Alex,Ilya,Hinton）**
 - **深度学习革命 by 凯德·梅茨**：https://weread.qq.com/web/reader/3bc32b50813ab773bg013d46
+- **[大模型技术的重要特性与发展趋势 by刘知远 20231201](Chapter1/大模型技术的重要特性与发展趋势-PPT.pdf)**
 <img src="./Preface/images/preface-2.png" alt="end2end" width="" />
-- [大模型技术的重要特性与发展趋势 by刘知远 20231201](Chapter1/大模型技术的重要特性与发展趋势-PPT.pdf)
+
 
 ### NLP pipeline
 
