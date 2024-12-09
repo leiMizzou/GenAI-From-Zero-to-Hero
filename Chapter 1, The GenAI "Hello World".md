@@ -3,6 +3,11 @@
 
 <img src="Chapter1/helloworld.png" alt="pytorch setup" width="" />
 
+### 今日内容 ###
+- **GenAI技术及开源生态背景的简要介绍**：
+  -- 为什么，有什么，做什么（个人和团体）
+- 
+
 ## 目录
 
 - [引言](#引言)
