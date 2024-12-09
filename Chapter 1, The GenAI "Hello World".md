@@ -961,6 +961,8 @@ python hello_world.py
 
 检索增强生成（Retrieval-Augmented Generation，RAG）是一种结合检索模块和生成模型的方法，通过检索相关文档来增强生成内容的准确性和相关性。RAG通过将生成内容与实际数据相结合，提升了回答的质量和可靠性。
 
+![原理图](https://github.com/chatchat-space/Langchain-Chatchat/raw/master/docs/img/langchain+chatglm.png)
+
 ### 2. 设置向量数据库（FAISS）
 
 FAISS（Facebook AI Similarity Search）是一个高效的相似性搜索库，适用于大规模向量检索。通过将文档转换为向量，FAISS可以快速检索与查询最相关的文档。
