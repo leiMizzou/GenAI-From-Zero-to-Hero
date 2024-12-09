@@ -962,6 +962,7 @@ python hello_world.py
 检索增强生成（Retrieval-Augmented Generation，RAG）是一种结合检索模块和生成模型的方法，通过检索相关文档来增强生成内容的准确性和相关性。RAG通过将生成内容与实际数据相结合，提升了回答的质量和可靠性。
 
 ![原理图](https://github.com/chatchat-space/Langchain-Chatchat/raw/master/docs/img/langchain+chatglm.png)
+![文档原理图](https://github.com/chatchat-space/Langchain-Chatchat/blob/master/docs/img/langchain+chatglm2.png)
 
 ### 2. 设置向量数据库（FAISS）
 
