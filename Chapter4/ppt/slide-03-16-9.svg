@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1280" height="720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#f7f9fc;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#6366f1;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#8b5cf6;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bgGradient)"/>
+  <text x="120" y="80" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#262626" style="white-space: pre;">研究背景: MAUDE-to-Go</text>
+  <rect x="120" y="100" width="120" height="3" fill="url(#accentGradient)" rx="1.5"/>
+  <text x="120" y="160" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#262626" style="white-space: pre;">MAUDE-to-GO 工作流程<tspan x="120" dy="1em">​</tspan></text>
+  <rect x="120" y="180" width="200" height="100" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <text x="220" y="220" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#404040" style="white-space: pre;">FDA MAUDE数据库</text>
+  <text x="220" y="250" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#525252" style="white-space: pre;">4900万报告</text>
+  <path d="M320,230 C350,230 350,230 370,230" stroke="#6366f1" stroke-width="2" fill="none" stroke-opacity="0.5"/>
+  <polygon points="365,226 375,230 365,234" fill="#6366f1" fill-opacity="0.5"/>
+  <rect x="370" y="180" width="200" height="100" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <text x="470" y="220" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#404040" style="white-space: pre;">数据处理</text>
+  <text x="470" y="250" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#525252" style="white-space: pre;">JSON / SQL 自动化ETL</text>
+  <path d="M570,230 C600,230 600,230 620,230" stroke="#6366f1" stroke-width="2" fill="none" stroke-opacity="0.5"/>
+  <polygon points="615,226 625,230 615,234" fill="#6366f1" fill-opacity="0.5"/>
+  <rect x="620" y="180" width="200" height="100" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <text x="720" y="220" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#404040" style="white-space: pre;">PostgreSQL数据库</text>
+  <text x="720" y="250" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#525252" style="white-space: pre;">混合搜索引擎</text>
+  <path d="M820,230 C850,230 850,230 870,230" stroke="#6366f1" stroke-width="2" fill="none" stroke-opacity="0.5"/>
+  <polygon points="865,226 875,230 865,234" fill="#6366f1" fill-opacity="0.5"/>
+  <rect x="870" y="180" width="200" height="100" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <text x="970" y="220" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#404040" style="white-space: pre;">DeepSeek API集成</text>
+  <text x="970" y="250" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#525252" style="white-space: pre;">自然语言查询</text>
+  <text x="120" y="320" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#262626" style="white-space: pre;">性能指标与优势</text>
+  <rect x="120" y="340" width="500" height="320" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <text x="150" y="380" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#404040" style="white-space: pre;">快速部署</text>
+  <text x="150" y="415" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">• Mac Mini M4</text>
+  <text x="150" y="450" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">• ~¥7000电脑配置</text>
+  <text x="150" y="485" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">• 30分钟安装，3 分钟完成数据研究过程<tspan x="150" dy="1em">​</tspan></text>
+  <text x="150" y="530" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#404040" style="white-space: pre;">数据规模</text>
+  <text x="150" y="565" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">• 160万 / 4900万</text>
+  <text x="150" y="600" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">• 支持全量数据和季度更新</text>
+  <text x="150" y="635" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#404040" style="white-space: pre;">可靠性</text>
+  <text x="395.069" y="636.454" font-family="Arial, sans-serif" font-size="16" fill="#6366f1" style="white-space: pre; font-size: 16px;">高一致性·低延迟·近实时</text>
+  <rect x="660" y="340" width="500" height="320" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <text x="910" y="380" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#404040" style="white-space: pre;">主要收益<tspan x="910" dy="1em">​</tspan></text>
+  <rect x="710" y="400" width="400" height="220" fill="none"/>
+  <line x1="710" y1="400" x2="710" y2="620" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="700" y="400" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#737373" style="white-space: pre;">100%</text>
+  <text x="700" y="510" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#737373" style="white-space: pre;">50%</text>
+  <text x="700" y="620" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#737373" style="white-space: pre;">0%</text>
+  <line x1="710" y1="620" x2="1110" y2="620" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="770" y="430" width="60" height="190" rx="4" fill="url(#accentGradient)" opacity="0.7"/>
+  <text x="800" y="640" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#525252" style="white-space: pre;">易用性</text>
+  <rect x="880" y="470" width="60" height="150" rx="4" fill="#8b5cf6" opacity="0.6"/>
+  <text x="910" y="640" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#525252" style="white-space: pre;">时间成本</text>
+  <rect x="990" y="520" width="60" height="100" rx="4" fill="#6366f1" opacity="0.5"/>
+  <text x="1020" y="640" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#525252" style="white-space: pre;">设备需求</text>
+  <rect x="0" y="670" width="1280" height="50" fill="#6366f1" opacity="0.03"/>
+  <text x="640" y="700" font-family="Arial, sans-serif" font-size="16" fill="#525252" text-anchor="middle" style="white-space: pre;">MAUDE-to-Go: 医疗设备数据处理与智能查询平台</text>
+</svg>

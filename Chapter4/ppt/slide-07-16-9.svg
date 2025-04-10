@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1280" height="720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#f7f9fc;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#6366f1;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#8b5cf6;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="tableHeaderGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#f5f3ff;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#ede9fe;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bgGradient)"/>
+  <text x="120" y="80" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#262626" style="white-space: pre;">AI编程助手功能对比</text>
+  <rect x="120" y="100" width="140" height="3" fill="url(#accentGradient)" rx="1.5"/>
+  <rect x="120" y="130" width="1040" height="50" rx="6" fill="url(#tableHeaderGradient)"/>
+  <text x="180" y="162" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4f46e5" style="white-space: pre;">功能/工具</text>
+  <text x="337.677" y="161.652" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4f46e5" style="white-space: pre; font-size: 16px;">GitHub Copilot</text>
+  <text x="597.005" y="162" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4f46e5" style="white-space: pre; font-size: 16px;">Cursor</text>
+  <text x="823.715" y="163.099" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4f46e5" style="white-space: pre; font-size: 16px;">Roo Code</text>
+  <text x="1086.74" y="160.14" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4f46e5" style="white-space: pre; font-size: 16px;">Trae</text>
+  <rect x="120" y="180" width="1040" height="42" rx="0" fill="#ffffff"/>
+  <text x="180" y="208" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre;">集成方式</text>
+  <text x="345.755" y="208.517" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre; font-size: 15px;">VSCode插件</text>
+  <text x="586.566" y="207.358" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre; font-size: 15px;">独立编辑器</text>
+  <text x="807.819" y="207.842" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre; font-size: 15px;">命令行+VSCode</text>
+  <text x="1068.51" y="208.206" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre; font-size: 15px;">独立编辑器</text>
+  <rect x="120" y="222" width="1040" height="42" rx="0" fill="#f5f3ff" opacity="0.5"/>
+  <text x="180" y="250" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre;">TAB键代码补全</text>
+  <circle cx="380" cy="250" r="12" fill="#6366f1" opacity="0.9"/>
+  <text x="380" y="254" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" style="white-space: pre;" text-anchor="middle">✓</text>
+  <circle cx="620" cy="250" r="12" fill="#8b5cf6" opacity="0.9"/>
+  <text x="620" y="254" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">$</text>
+  <circle cx="860" cy="250" r="12" fill="#ef4444" opacity="0.9"/>
+  <text x="860" y="254" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">✗</text>
+  <circle cx="1100" cy="250" r="12" fill="#6366f1" opacity="0.9"/>
+  <text x="1100" y="254" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">✓</text>
+  <rect x="120" y="264" width="1040" height="42" rx="0" fill="#ffffff"/>
+  <text x="180" y="292" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre;">代码解释</text>
+  <circle cx="380" cy="292" r="12" fill="#6366f1" opacity="0.9"/>
+  <text x="380" y="296" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">✓</text>
+  <circle cx="620" cy="292" r="12" fill="#8b5cf6" opacity="0.9"/>
+  <text x="620" y="296" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">$</text>
+  <circle cx="860" cy="292" r="12" fill="#6366f1" opacity="0.9"/>
+  <text x="860" y="296" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">✓</text>
+  <circle cx="1100" cy="292" r="12" fill="#6366f1" opacity="0.9"/>
+  <text x="1100" y="296" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">✓</text>
+  <rect x="120" y="306" width="1040" height="42" rx="0" fill="#f5f3ff" opacity="0.5"/>
+  <text x="180" y="334" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre;">整个项目生成</text>
+  <circle cx="380" cy="334" r="12" fill="#a78bfa" opacity="0.9"/>
+  <text x="380" y="338" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">~</text>
+  <circle cx="620" cy="334" r="12" fill="#8b5cf6" opacity="0.9"/>
+  <text x="620" y="338" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">$</text>
+  <circle cx="860" cy="334" r="12" fill="#6366f1" opacity="0.9"/>
+  <text x="860" y="338" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">✓</text>
+  <circle cx="1100" cy="334" r="12" fill="#a78bfa" opacity="0.9"/>
+  <text x="1100" y="338" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">~</text>
+  <rect x="120" y="348" width="1040" height="42" rx="0" fill="#ffffff"/>
+  <text x="180" y="376" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre;">长文件处理</text>
+  <circle cx="380" cy="376" r="12" fill="#a78bfa" opacity="0.9"/>
+  <text x="380" y="380" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">~</text>
+  <circle cx="620" cy="376" r="12" fill="#6366f1" opacity="0.9"/>
+  <text x="620" y="380" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">$</text>
+  <circle cx="860" cy="376" r="12" fill="#a78bfa" opacity="0.9"/>
+  <text x="860" y="380" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">~</text>
+  <circle cx="1100" cy="376" r="12" fill="#6366f1" opacity="0.9"/>
+  <text x="1100" y="380" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">✓</text>
+  <rect x="120" y="390" width="1040" height="42" rx="0" fill="#f5f3ff" opacity="0.5"/>
+  <text x="180" y="418" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre;">项目理解与索引</text>
+  <circle cx="380" cy="418" r="12" fill="#6366f1" opacity="0.9"/>
+  <text x="380" y="422" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">✓</text>
+  <circle cx="620" cy="418" r="12" fill="#6366f1" opacity="0.9"/>
+  <text x="620" y="422" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">$</text>
+  <circle cx="860" cy="418" r="12" fill="#a78bfa" opacity="0.9"/>
+  <text x="860" y="422" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">~</text>
+  <circle cx="1100" cy="418" r="12" fill="#6366f1" opacity="0.9"/>
+  <text x="1100" y="422" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">✓</text>
+  <rect x="120" y="432" width="1040" height="42" rx="0" fill="#ffffff"/>
+  <text x="180" y="460" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre;">使用成本</text>
+  <text x="340.01" y="460.452" font-family="Arial, sans-serif" font-size="13" fill="#525252" style="white-space: pre; font-size: 13px;">付费/学生免费</text>
+  <text x="601.025" y="459.984" font-family="Arial, sans-serif" font-size="13" fill="#525252" style="white-space: pre; font-size: 13px;">需付费</text>
+  <text x="832.664" y="459.228" font-family="Arial, sans-serif" font-size="13" fill="#525252" style="white-space: pre; font-size: 13px;">API消耗大</text>
+  <text x="1087.84" y="460.843" font-family="Arial, sans-serif" font-size="13" fill="#525252" style="white-space: pre; font-size: 13px;">免费</text>
+  <rect x="120" y="474" width="1040" height="42" rx="0" fill="#f5f3ff" opacity="0.5"/>
+  <text x="180" y="502" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre;">隐私安全</text>
+  <circle cx="380" cy="502" r="12" fill="#a78bfa" opacity="0.9"/>
+  <text x="380" y="506" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">~</text>
+  <circle cx="620" cy="502" r="12" fill="#ef4444" opacity="0.9"/>
+  <text x="620" y="506" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">✗</text>
+  <circle cx="860" cy="502" r="12" fill="#a78bfa" opacity="0.9"/>
+  <text x="860" y="506" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">~</text>
+  <circle cx="1100" cy="502" r="12" fill="#ef4444" opacity="0.9"/>
+  <text x="1100" y="506" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">✗</text>
+  <rect x="120" y="540" width="1040" height="120" rx="8" fill="#ffffff" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.03))"/>
+  <text x="139.463" y="560.175" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#525252" style="white-space: pre; font-size: 18px;">图例</text>
+  <circle cx="200" cy="600" r="12" fill="#6366f1" opacity="0.9"/>
+  <text x="200" y="604" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">✓</text>
+  <text x="225" y="604" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre;">优秀</text>
+  <circle cx="350" cy="600" r="12" fill="#a78bfa" opacity="0.9"/>
+  <text x="350" y="604" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">~</text>
+  <text x="375" y="604" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre;">中等</text>
+  <circle cx="500" cy="600" r="12" fill="#ef4444" opacity="0.9"/>
+  <text x="500" y="604" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">✗</text>
+  <text x="525" y="604" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre;">不佳/不支持</text>
+  <circle cx="700" cy="600" r="12" fill="#8b5cf6" opacity="0.9"/>
+  <text x="700" y="604" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">$</text>
+  <text x="725" y="604" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre;">付费功能</text>
+  <text x="932.647" y="603.769" font-family="Arial, sans-serif" font-size="13" font-style="italic" fill="#6b7280" style="white-space: pre; font-size: 13px;">注: 此比较基于2024年4月功能情况</text>
+  <rect x="0" y="670" width="1280" height="50" fill="#6366f1" opacity="0.03"/>
+  <text x="640" y="700" font-family="Arial, sans-serif" font-size="16" fill="#6b7280" text-anchor="middle" style="white-space: pre;">AI编程助手功能对比与选择指南</text>
+</svg>

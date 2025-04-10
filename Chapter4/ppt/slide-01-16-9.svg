@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1280" height="720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#f7f9fc;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#6366f1;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#8b5cf6;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bgGradient)"/>
+  <circle cx="1100" cy="140" r="120" fill="#8b5cf6" opacity="0.05"/>
+  <circle cx="1050" cy="180" r="90" fill="#6366f1" opacity="0.05"/>
+  <circle cx="1150" cy="100" r="70" fill="#a78bfa" opacity="0.05"/>
+  <text x="120" y="260" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#262626" style="white-space: pre;">基于DeepSeek的生成式AI开发实践</text>
+  <text x="120" y="340" font-family="Arial, sans-serif" font-size="32" font-weight="normal" fill="#6366f1" style="white-space: pre;">从API集成到长文本生成</text>
+  <rect x="120" y="380" width="180" height="3" fill="url(#accentGradient)" rx="1.5"/>
+  <text x="120" y="430" font-family="Arial, sans-serif" font-size="20" fill="#525252" style="white-space: pre;">14:50-15:20</text>
+  <text x="120" y="500" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#262626" style="white-space: pre;">华磊</text>
+  <text x="120" y="540" font-family="Arial, sans-serif" font-size="20" fill="#525252" style="white-space: pre;">忻州师范学院</text>
+  <text x="120" y="580" font-family="Arial, sans-serif" font-size="20" fill="#525252" style="white-space: pre;">计算机系</text>
+  <rect x="0" y="670" width="1280" height="50" fill="#6366f1" opacity="0.03"/>
+  <text x="640" y="700" font-family="Arial, sans-serif" font-size="16" fill="#6366f1" text-anchor="middle" style="white-space: pre;">生成式AI应用开发</text>
+</svg>

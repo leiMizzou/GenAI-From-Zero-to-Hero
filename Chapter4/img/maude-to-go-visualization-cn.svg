@@ -1,0 +1,315 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 630" width="900" height="630">
+  <!-- Styles -->
+  <style>
+    text {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+    }
+    .section-title {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .panel-title {
+      font-size: 12px;
+      font-weight: bold;
+      text-anchor: middle;
+    }
+    .panel {
+      fill: white;
+      stroke: #ccc;
+      stroke-width: 1.5;
+      rx: 10;
+      ry: 10;
+    }
+    .arrow {
+      fill: none;
+      stroke: #60b5cc;
+      stroke-width: 2;
+      marker-end: url(#arrowhead);
+    }
+    .icon-bg {
+      fill: #e6f7fa;
+      stroke: #60b5cc;
+      stroke-width: 1;
+      rx: 5;
+      ry: 5;
+    }
+    .icon-circle {
+      fill: #e6f7fa;
+      stroke: #60b5cc;
+      stroke-width: 1;
+    }
+    .icon-path {
+      fill: none;
+      stroke: #60b5cc;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .icon-fill {
+      fill: #60b5cc;
+    }
+    .data-box {
+      fill: #60b5cc;
+      stroke: none;
+    }
+    .secondary-box {
+      fill: #78d98f;
+      stroke: none;
+    }
+    .code-text {
+      font-family: monospace;
+      font-size: 9px;
+    }
+    .connector-line {
+      stroke: #8cd9a6;
+      stroke-width: 3;
+      stroke-linecap: round;
+      fill: none;
+    }
+  </style>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#60b5cc" />
+    </marker>
+  </defs>
+
+  <!-- Section a: Data Acquisition & Transformation -->
+  <text x="20" y="30" class="section-title">a</text>
+  <rect x="40" y="10" width="840" height="180" class="panel" />
+  
+  <!-- FDA MAUDE Data Panel -->
+  <rect x="60" y="25" width="160" height="150" class="panel" />
+  <text x="140" y="45" class="panel-title">FDA MAUDE数据库</text>
+  
+  <!-- MAUDE data icon -->
+  <rect x="80" y="55" width="40" height="50" class="icon-bg" />
+  <path d="M 85 60 h 30 M 85 70 h 30 M 85 80 h 20 M 85 90 h 25" class="icon-path" />
+  
+  <!-- API icon -->
+  <rect x="150" y="55" width="40" height="50" class="icon-bg" />
+  <path d="M 155 70 h 30 M 155 80 h 30 M 160 60 v 40 M 170 60 v 40 M 180 60 v 40" class="icon-path" />
+  
+  <!-- Download text -->
+  <text x="140" y="130" text-anchor="middle">4900万报告</text>
+  <text x="140" y="150" text-anchor="middle">复杂架构</text>
+  
+  <!-- Transformation Panel -->
+  <rect x="260" y="25" width="160" height="150" class="panel" />
+  <text x="340" y="45" class="panel-title">数据处理</text>
+  
+  <!-- JSON Analysis icon -->
+  <rect x="280" y="55" width="40" height="50" class="icon-bg" />
+  <text x="300" y="85" font-size="8" text-anchor="middle">JSON</text>
+  <path d="M 285 65 h 30 M 285 70 h 20 M 285 75 h 25 M 285 95 h 30" class="icon-path" />
+  
+  <!-- SQL Transform icon -->
+  <rect x="350" y="55" width="40" height="50" class="icon-bg" />
+  <text x="370" y="85" font-size="8" text-anchor="middle">SQL</text>
+  <path d="M 355 65 h 30 M 355 70 h 20 M 355 75 h 25 M 355 95 h 30" class="icon-path" />
+  
+  <!-- Transformation text -->
+  <text x="340" y="130" text-anchor="middle">自动生成架构</text>
+  <text x="340" y="150" text-anchor="middle">自动化ETL</text>
+  
+  <!-- Database Panel - widened to show full text -->
+  <rect x="460" y="25" width="160" height="150" class="panel" />
+  <text x="540" y="45" class="panel-title">PostgreSQL数据库</text>
+  
+  <!-- Database cylinder icon - widened to show full text -->
+  <rect x="500" y="70" width="80" height="40" rx="5" ry="5" stroke="#60b5cc" stroke-width="1.5" fill="#e6f7fa" />
+  <line x1="500" y1="80" x2="580" y2="80" stroke="#60b5cc" stroke-width="1" />
+  <line x1="500" y1="100" x2="580" y2="100" stroke="#60b5cc" stroke-width="1" />
+  
+  <!-- Database content - widened to show full text -->
+  <rect x="505" y="82" width="70" height="16" class="data-box" />
+  <text x="540" y="94" fill="white" text-anchor="middle" font-size="10">MAUDE数据</text>
+  
+  <!-- Database features - positioned to match reference -->
+  <text x="540" y="130" text-anchor="middle">混合搜索引擎</text>
+  
+  <!-- LLM Panel -->
+  <rect x="660" y="25" width="160" height="150" class="panel" />
+  <text x="740" y="45" class="panel-title">LLM集成</text>
+  
+  <!-- LLM brain icon -->
+  <circle cx="740" cy="95" r="30" class="icon-circle" />
+  <path d="M 720 95 q 20 -20 40 0 M 720 95 q 20 20 40 0 M 740 70 v 50" class="icon-path" />
+  <path d="M 725 80 q 15 -10 30 0 M 725 110 q 15 10 30 0" class="icon-path" />
+  
+  <!-- LLM features -->
+  <text x="740" y="140" text-anchor="middle">自然语言</text>
+  <text x="740" y="155" text-anchor="middle">查询处理</text>
+  
+  <!-- Arrows connecting panels -->
+  <path d="M 220 95 h 40" class="arrow" />
+  <path d="M 420 95 h 40" class="arrow" />
+  <path d="M 620 95 h 40" class="arrow" />
+
+  <!-- Section b: Deployment & Performance -->
+  <text x="20" y="230" class="section-title">b</text>
+  <rect x="40" y="210" width="840" height="180" class="panel" />
+  
+  <!-- Hardware Requirements Panel -->
+  <rect x="60" y="225" width="160" height="150" class="panel" />
+  <text x="140" y="245" class="panel-title">快速部署</text>
+  
+  <!-- Computer icon -->
+  <rect x="105" y="260" width="70" height="50" class="icon-bg" />
+  <rect x="115" y="270" width="50" height="30" class="icon-fill" fill-opacity="0.3" />
+  <rect x="125" y="310" width="30" height="10" class="icon-bg" />
+  
+  <!-- Specs -->
+  <text x="140" y="335" text-anchor="middle">Mac Mini M4</text>
+  <text x="140" y="350" text-anchor="middle">~$1000电脑</text>
+  <text x="140" y="365" text-anchor="middle">30分钟安装</text>
+  
+  <!-- Deployment Performance Panel -->
+  <rect x="260" y="225" width="160" height="150" class="panel" />
+  <text x="340" y="245" class="panel-title">性能指标</text>
+  
+  <!-- Chart -->
+  <rect x="280" y="260" width="120" height="80" fill="none" stroke="#ccc" />
+  <path d="M 280 340 v -80 h 120" stroke="#ccc" stroke-width="1" />
+  <text x="275" y="265" text-anchor="end" font-size="8">100%</text>
+  <text x="275" y="305" text-anchor="end" font-size="8">50%</text>
+  <text x="275" y="340" text-anchor="end" font-size="8">0%</text>
+  
+  <!-- Bar chart -->
+  <rect x="295" y="300" width="25" height="40" class="data-box" />
+  <rect x="330" y="280" width="25" height="60" class="secondary-box" />
+  <rect x="365" y="310" width="25" height="30" class="data-box" />
+  
+  <text x="307" y="355" text-anchor="middle" font-size="8">时间</text>
+  <text x="342" y="355" text-anchor="middle" font-size="8">内存</text>
+  <text x="377" y="355" text-anchor="middle" font-size="8">CPU</text>
+  
+  <!-- Data Scale Panel - widened boxes to show full text -->
+  <rect x="460" y="225" width="160" height="150" class="panel" />
+  <text x="540" y="245" class="panel-title">数据规模</text>
+  
+  <!-- Dataset boxes - widened to show full text -->
+  <rect x="485" y="275" width="40" height="40" class="data-box" />
+  <text x="505" y="295" fill="white" text-anchor="middle" font-size="9">160万</text>
+  <text x="505" y="307" fill="white" text-anchor="middle" font-size="9">季度</text>
+  
+  <rect x="525" y="275" width="40" height="40" class="secondary-box" />
+  <text x="545" y="295" fill="white" text-anchor="middle" font-size="9">4900万</text>
+  <text x="545" y="307" fill="white" text-anchor="middle" font-size="9">全量</text>
+  
+  <text x="540" y="335" text-anchor="middle">支持全量数据集</text>
+  <text x="540" y="350" text-anchor="middle">最少交互</text>
+  
+  <!-- Reproducibility Panel - exactly matching reference image -->
+  <rect x="660" y="225" width="160" height="150" class="panel" />
+  <text x="740" y="245" class="panel-title">可重复性</text>
+  
+  <!-- Check mark icon - simplified to match reference -->
+  <circle cx="675" cy="275" r="12" fill="#e6f7fa" stroke="#60b5cc" stroke-width="1" />
+  <polyline points="669,275 674,280 682,270" stroke="#60b5cc" stroke-width="2" fill="none" />
+  
+  <!-- Metrics - positioned as in reference image -->
+  <text x="700" y="278" font-size="11" text-anchor="left">高一致性</text>
+  <text x="700" y="298" font-size="11" text-anchor="left">提高召回率</text>
+  <text x="700" y="318" font-size="11" text-anchor="left">时间缩短</text>
+  <text x="700" y="338" font-size="11" text-anchor="left">近实时</text>
+  
+  <!-- Arrows connecting panels -->
+  <path d="M 220 300 h 40" class="arrow" />
+  <path d="M 420 300 h 40" class="arrow" />
+  <path d="M 620 300 h 40" class="arrow" />
+
+  <!-- Section c: Analysis & Impact - compacted to reduce empty space -->
+  <text x="20" y="430" class="section-title">c</text>
+  <rect x="40" y="410" width="840" height="220" class="panel" />
+  
+  <!-- Natural Language Query Panel -->
+  <rect x="60" y="425" width="160" height="190" class="panel" />
+  <text x="140" y="445" class="panel-title">自然语言查询界面</text>
+  
+  <!-- Command line interface -->
+  <rect x="80" y="465" width="120" height="60" fill="black" />
+  <text x="85" y="485" fill="white" class="code-text">输液泵最近的不良</text>
+  <text x="85" y="500" fill="white" class="code-text">事件趋势是什么？</text>
+  
+  <!-- Chain of Thought icon - curved lines like reference -->
+  <path d="M 100 545 q 10 10 20 0 q 10 10 20 0 q 10 10 20 0" class="icon-path" stroke-width="2" />
+  <text x="140" y="570" text-anchor="middle">思维链处理</text>
+  
+  <!-- Chained Analysis Panel -->
+  <rect x="260" y="425" width="160" height="190" class="panel" />
+  <text x="340" y="445" class="panel-title">链式分析</text>
+  
+  <!-- Flow diagram showing chained analysis - matching reference colors -->
+  <rect x="280" y="480" width="120" height="30" rx="3" ry="3" fill="#60b5cc" />
+  <text x="340" y="500" fill="white" text-anchor="middle" font-size="10">初始查询</text>
+  
+  <path d="M 340 510 v 15" stroke="#60b5cc" marker-end="url(#arrowhead)" fill="none" />
+  
+  <rect x="280" y="525" width="120" height="30" rx="3" ry="3" fill="#8cd9a6" />
+  <text x="340" y="545" fill="white" text-anchor="middle" font-size="10">后续查询</text>
+  
+  <path d="M 340 555 v 15" stroke="#60b5cc" marker-end="url(#arrowhead)" fill="none" />
+  
+  <rect x="280" y="570" width="120" height="30" rx="3" ry="3" fill="#60b5cc" />
+  <text x="340" y="590" fill="white" text-anchor="middle" font-size="10">深度分析</text>
+  
+  <!-- Visualization Panel -->
+  <rect x="460" y="425" width="160" height="190" class="panel" />
+  <text x="540" y="445" class="panel-title">自动可视化</text>
+  
+  <!-- Chart matching reference image -->
+  <rect x="490" y="470" width="100" height="120" fill="white" stroke="#ccc" stroke-width="0.5" />
+  <path d="M 490 470 L 590 590 L 490 590 Z" fill="black" />
+  
+  <!-- Line charts - styled after reference image -->
+  <path d="M 490 530 L 510 525 L 530 515 L 550 505 L 570 490 L 590 470" 
+        stroke="#60b5cc" stroke-width="2" fill="none" />
+  <path d="M 490 560 L 510 565 L 530 570 L 550 575 L 570 580 L 590 560" 
+        stroke="#8cd9a6" stroke-width="2" fill="none" />
+  
+  <!-- Impact Panel -->
+  <rect x="660" y="425" width="160" height="190" class="panel" />
+  <text x="740" y="445" class="panel-title">影响与效益</text>
+  
+  <!-- Impact icons - exact match to reference -->
+  <!-- Clock icon -->
+  <circle cx="675" cy="480" r="12" fill="#e6f7fa" stroke="#60b5cc" stroke-width="1" />
+  <circle cx="675" cy="480" r="8" fill="none" stroke="#60b5cc" stroke-width="1.5" />
+  <line x1="675" y1="480" x2="675" y2="475" stroke="#60b5cc" stroke-width="1.5" />
+  <line x1="675" y1="480" x2="679" y2="480" stroke="#60b5cc" stroke-width="1.5" />
+  <text x="700" y="484" font-size="12" text-anchor="left">及时性</text>
+  
+  <!-- Magnifying glass icon -->
+  <circle cx="675" cy="510" r="12" fill="#e6f7fa" stroke="#60b5cc" stroke-width="1" />
+  <circle cx="672" cy="507" r="6" fill="none" stroke="#60b5cc" stroke-width="1.5" />
+  <line x1="676" y1="511" x2="682" y2="517" stroke="#60b5cc" stroke-width="1.5" />
+  <text x="700" y="514" font-size="12" text-anchor="left">民主化</text>
+  
+  <!-- Document icon -->
+  <circle cx="675" cy="540" r="12" fill="#e6f7fa" stroke="#60b5cc" stroke-width="1" />
+  <rect x="670" y="534" width="10" height="12" fill="none" stroke="#60b5cc" stroke-width="1" />
+  <path d="M 673 537 h 4 M 673 540 h 4 M 673 543 h 4" stroke="#60b5cc" stroke-width="1" />
+  <text x="700" y="544" font-size="12" text-anchor="left">可重复性</text>
+  
+  <!-- Rocket icon -->
+  <circle cx="675" cy="570" r="12" fill="#e6f7fa" stroke="#60b5cc" stroke-width="1" />
+  <path d="M 675 564 l 3 10 l -3 -2 l -3 2 z" fill="#60b5cc" stroke="none" />
+  <path d="M 675 564 q -3 -3 0 -6 q 3 -3 0 6" fill="none" stroke="#60b5cc" stroke-width="1" />
+  <text x="700" y="574" font-size="12" text-anchor="left">快速信号检测</text>
+  
+  <!-- Arrows connecting panels - horizontal blue arrows -->
+  <path d="M 220 510 h 40" class="arrow" />
+  <path d="M 420 510 h 40" class="arrow" />
+  <path d="M 620 510 h 40" class="arrow" />
+  
+  <!-- Bottom connector lines - adjusted for shorter height -->
+  <path d="M 40 190 v 20" class="connector-line" />
+  <path d="M 880 190 v 20" class="connector-line" />
+  <path d="M 40 390 v 20" class="connector-line" />
+  <path d="M 880 390 v 20" class="connector-line" />
+  <path d="M 40 630 v -20" class="connector-line" />
+  <path d="M 880 630 v -20" class="connector-line" />
+</svg>

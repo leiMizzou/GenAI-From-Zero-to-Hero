@@ -1,0 +1,254 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 800" width="900" height="800">
+  <!-- Styles -->
+  <style>
+    text {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+    }
+    .section-title {
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .panel-title {
+      font-size: 13px;
+      font-weight: bold;
+      text-anchor: middle;
+    }
+    .panel {
+      fill: white;
+      stroke: #ccc;
+      stroke-width: 1.5;
+      rx: 10;
+      ry: 10;
+    }
+    .arrow {
+      fill: none;
+      stroke: #60b5cc;
+      stroke-width: 2.5;
+      marker-end: url(#arrowhead);
+    }
+    .down-arrow {
+      fill: none;
+      stroke: #60b5cc;
+      stroke-width: 2.5;
+      marker-end: url(#arrowhead);
+    }
+    .data-box {
+      fill: #60b5cc;
+      stroke: none;
+      rx: 4;
+      ry: 4;
+    }
+    .secondary-box {
+      fill: #78d98f;
+      stroke: none;
+      rx: 4;
+      ry: 4;
+    }
+    .icon-bg {
+      fill: #e6f7fa;
+      stroke: #60b5cc;
+      stroke-width: 1;
+      rx: 4;
+      ry: 4;
+    }
+    .section-bg {
+      fill: #f8f9fa;
+      stroke: #dee2e6;
+      stroke-width: 1;
+      rx: 12;
+      ry: 12;
+    }
+  </style>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#60b5cc" />
+    </marker>
+  </defs>
+
+  <!-- Background for sections -->
+  <rect x="30" y="10" width="840" height="180" class="section-bg" />
+  <rect x="30" y="210" width="840" height="240" class="section-bg" />
+  <rect x="30" y="470" width="840" height="310" class="section-bg" />
+
+  <!-- Section 1: User Input & Initialization -->
+  <text x="50" y="40" class="section-title">1. 用户输入与初始化</text>
+  
+  <!-- User Input Panel -->
+  <rect x="70" y="55" width="230" height="120" class="panel" />
+  <text x="185" y="75" class="panel-title">用户输入参数</text>
+  
+  <!-- User Input Fields -->
+  <rect x="90" y="85" width="190" height="25" class="icon-bg" />
+  <text x="185" y="102" text-anchor="middle">标题 (title)</text>
+  
+  <rect x="90" y="115" width="190" height="25" class="icon-bg" />
+  <text x="185" y="132" text-anchor="middle">字数 (length)</text>
+  
+  <rect x="90" y="145" width="190" height="25" class="icon-bg" />
+  <text x="185" y="162" text-anchor="middle">体裁 (genre) / 语言 (language)</text>
+  
+  <!-- Environment Setup Panel -->
+  <rect x="350" y="55" width="230" height="120" class="panel" />
+  <text x="465" y="75" class="panel-title">环境设置</text>
+  
+  <!-- Environment components -->
+  <rect x="370" y="85" width="190" height="25" class="data-box" />
+  <text x="465" y="102" text-anchor="middle" fill="white">加载环境变量 (.env)</text>
+  
+  <rect x="370" y="115" width="190" height="25" class="data-box" />
+  <text x="465" y="132" text-anchor="middle" fill="white">设置日志 (setup_logging)</text>
+  
+  <rect x="370" y="145" width="190" height="25" class="data-box" />
+  <text x="465" y="162" text-anchor="middle" fill="white">创建输出目录</text>
+  
+  <!-- API Access Panel -->
+  <rect x="630" y="55" width="230" height="120" class="panel" />
+  <text x="745" y="75" class="panel-title">API 访问</text>
+  
+  <!-- API components -->
+  <rect x="650" y="85" width="190" height="25" class="secondary-box" />
+  <text x="745" y="102" text-anchor="middle" fill="white">验证 Gemini API 密钥</text>
+  
+  <rect x="650" y="115" width="190" height="25" class="secondary-box" />
+  <text x="745" y="132" text-anchor="middle" fill="white">设置 Gemini 模型</text>
+  
+  <rect x="650" y="145" width="190" height="25" class="secondary-box" />
+  <text x="745" y="162" text-anchor="middle" fill="white">错误重试机制</text>
+
+  <!-- Arrows connecting panels -->
+  <path d="M 300 115 h 50" class="arrow" />
+  <path d="M 580 115 h 50" class="arrow" />
+  
+  <!-- Section 2: Outline Generation -->
+  <text x="50" y="240" class="section-title">2. 大纲生成与优化</text>
+  
+  <!-- Outline Generation Panel -->
+  <rect x="70" y="255" width="230" height="180" class="panel" />
+  <text x="185" y="275" class="panel-title">大纲生成 (generate_outline)</text>
+  
+  <!-- Outline components -->
+  <rect x="90" y="290" width="190" height="30" class="data-box" />
+  <text x="185" y="310" text-anchor="middle" fill="white">根据标题和长度生成章节结构</text>
+  
+  <rect x="90" y="325" width="90" height="30" class="icon-bg" />
+  <text x="135" y="345" text-anchor="middle">章节划分</text>
+  
+  <rect x="190" y="325" width="90" height="30" class="icon-bg" />
+  <text x="235" y="345" text-anchor="middle">章节字数</text>
+  
+  <rect x="90" y="360" width="190" height="30" class="secondary-box" />
+  <text x="185" y="380" text-anchor="middle" fill="white">生成JSON格式大纲</text>
+  
+  <!-- Outline Validation Panel -->
+  <rect x="350" y="255" width="230" height="180" class="panel" />
+  <text x="465" y="275" class="panel-title">大纲验证与优化</text>
+  
+  <!-- Validation components -->
+  <rect x="370" y="290" width="190" height="30" class="data-box" />
+  <text x="465" y="310" text-anchor="middle" fill="white">验证大纲结构 (validate_outline)</text>
+  
+  <rect x="370" y="325" width="190" height="30" class="secondary-box" />
+  <text x="465" y="345" text-anchor="middle" fill="white">优化章节划分</text>
+  
+  <rect x="370" y="360" width="90" height="30" class="icon-bg" />
+  <text x="415" y="380" text-anchor="middle">合并章节</text>
+  
+  <rect x="470" y="360" width="90" height="30" class="icon-bg" />
+  <text x="515" y="380" text-anchor="middle">拆分章节</text>
+  
+  <!-- Title Sanitization Panel -->
+  <rect x="630" y="255" width="230" height="180" class="panel" />
+  <text x="745" y="275" class="panel-title">标题净化</text>
+  
+  <!-- Title components -->
+  <rect x="650" y="290" width="190" height="30" class="data-box" />
+  <text x="745" y="310" text-anchor="middle" fill="white">净化标题 (sanitize_title)</text>
+  
+  <rect x="650" y="325" width="190" height="30" class="secondary-box" />
+  <text x="745" y="345" text-anchor="middle" fill="white">重新生成标题</text>
+  
+  <rect x="650" y="360" width="190" height="30" class="icon-bg" />
+  <text x="745" y="380" text-anchor="middle">避免敏感内容</text>
+  
+  <!-- Arrows connecting panels -->
+  <path d="M 300 330 h 50" class="arrow" />
+  <path d="M 580 330 h 50" class="arrow" />
+
+  <!-- Section 3: Article Generation -->
+  <text x="50" y="500" class="section-title">3. 文章生成与保存</text>
+  
+  <!-- Article Assembly Panel -->
+  <rect x="70" y="515" width="230" height="250" class="panel" />
+  <text x="185" y="535" class="panel-title">文章组装 (assemble_article)</text>
+  
+  <!-- Article Assembly components -->
+  <rect x="90" y="550" width="190" height="30" class="data-box" />
+  <text x="185" y="570" text-anchor="middle" fill="white">生成引言</text>
+  
+  <rect x="90" y="585" width="190" height="40" class="icon-bg" />
+  <text x="185" y="605" text-anchor="middle">逐章节生成内容</text>
+  <text x="185" y="620" text-anchor="middle">保持上下文连贯性</text>
+  
+  <rect x="90" y="630" width="90" height="35" class="secondary-box" />
+  <text x="135" y="650" text-anchor="middle" fill="white">内容回滚</text>
+  
+  <rect x="190" y="630" width="90" height="35" class="secondary-box" />
+  <text x="235" y="650" text-anchor="middle" fill="white">阻止处理</text>
+  
+  <rect x="90" y="670" width="190" height="30" class="data-box" />
+  <text x="185" y="690" text-anchor="middle" fill="white">生成结论</text>
+  
+  <!-- API Integration Panel -->
+  <rect x="350" y="515" width="230" height="250" class="panel" />
+  <text x="465" y="535" class="panel-title">API 集成 (call_gemini_api)</text>
+  
+  <!-- API Integration components -->
+  <rect x="370" y="550" width="190" height="30" class="icon-bg" />
+  <text x="465" y="570" text-anchor="middle">提示工程设计</text>
+  
+  <rect x="370" y="585" width="190" height="30" class="data-box" />
+  <text x="465" y="605" text-anchor="middle" fill="white">调用 Gemini API</text>
+  
+  <rect x="370" y="620" width="190" height="30" class="secondary-box" />
+  <text x="465" y="640" text-anchor="middle" fill="white">解析 API 响应</text>
+  
+  <rect x="370" y="655" width="90" height="35" class="icon-bg" />
+  <text x="415" y="675" text-anchor="middle">错误处理</text>
+  
+  <rect x="470" y="655" width="90" height="35" class="icon-bg" />
+  <text x="515" y="675" text-anchor="middle">重试机制</text>
+  
+  <rect x="370" y="695" width="190" height="30" class="data-box" />
+  <text x="465" y="715" text-anchor="middle" fill="white">返回生成文本</text>
+  
+  <!-- Output Management Panel -->
+  <rect x="630" y="515" width="230" height="250" class="panel" />
+  <text x="745" y="535" class="panel-title">输出管理</text>
+  
+  <!-- Output components -->
+  <rect x="650" y="550" width="190" height="30" class="secondary-box" />
+  <text x="745" y="570" text-anchor="middle" fill="white">保存进度 (save_progress)</text>
+  
+  <rect x="650" y="585" width="190" height="30" class="data-box" />
+  <text x="745" y="605" text-anchor="middle" fill="white">保存大纲 (outline.json)</text>
+  
+  <rect x="650" y="620" width="190" height="30" class="data-box" />
+  <text x="745" y="640" text-anchor="middle" fill="white">保存文章 (save_article)</text>
+  
+  <rect x="650" y="655" width="190" height="35" class="icon-bg" />
+  <text x="745" y="677" text-anchor="middle">记录日志 (logging)</text>
+  
+  <rect x="650" y="695" width="190" height="30" class="secondary-box" />
+  <text x="745" y="715" text-anchor="middle" fill="white">返回结果给用户</text>
+  
+  <!-- Arrows connecting panels -->
+  <path d="M 300 620 h 50" class="arrow" />
+  <path d="M 580 620 h 50" class="arrow" />
+  
+  <!-- Connecting arrows between sections -->
+  <path d="M 450 190 v 20" class="down-arrow" />
+  <path d="M 450 450 v 20" class="down-arrow" />
+</svg>

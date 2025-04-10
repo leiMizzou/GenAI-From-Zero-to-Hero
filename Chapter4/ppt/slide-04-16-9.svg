@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1280" height="720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#f7f9fc;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#6366f1;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#8b5cf6;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="subtleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" style="stop-color:#f3f4f6;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#f9fafb;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bgGradient)"/>
+  <text x="120" y="80" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#262626" style="white-space: pre;">自然语言处理与分析能力</text>
+  <rect x="120" y="100" width="140" height="3" fill="url(#accentGradient)" rx="1.5"/>
+  <text x="120" y="150" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#262626" style="white-space: pre;">自然语言查询界面</text>
+  <rect x="120" y="170" width="500" height="220" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <rect x="150" y="200" width="440" height="100" rx="6" fill="#262626"/>
+  <text x="370" y="250" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -214.189, -19.9828)">1）Endoscopic Mucosal Resection (EMR)是什么，<tspan x="370" dy="1em">​</tspan>     数据库相关的信息有哪些，可以做什么研究？<tspan x="370" dy="1em">​</tspan><tspan x="370" dy="1em">​</tspan>2）请进行数据库数据质量分析。</text>
+  <text x="370" y="280" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;"> </text>
+  <rect x="150" y="320" width="10" height="10" rx="5" fill="#6366f1" opacity="0.7"/>
+  <text x="170" y="330" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre;">总体语义理解与意图提取</text>
+  <rect x="150" y="350" width="10" height="10" rx="5" fill="#8b5cf6" opacity="0.7"/>
+  <text x="170" y="360" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre;">自动识别关键词与上下文关联</text>
+  <rect x="660" y="170" width="500" height="220" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <text style="fill: rgb(64, 64, 64); font-family: Arial, sans-serif; font-size: 22px; font-weight: 700; text-anchor: middle; white-space: pre;" x="851.242" y="149.391">语义聚类和相似度分析（CHIMA2025）</text>
+  <circle cx="760" cy="250" r="6" fill="#6366f1" opacity="0.7"/>
+  <circle cx="770" cy="240" r="6" fill="#6366f1" opacity="0.7"/>
+  <circle cx="750" cy="235" r="6" fill="#6366f1" opacity="0.7"/>
+  <circle cx="765" cy="255" r="6" fill="#6366f1" opacity="0.7"/>
+  <circle cx="755" cy="245" r="6" fill="#6366f1" opacity="0.7"/>
+  <circle cx="745" cy="230" r="6" fill="#6366f1" opacity="0.7"/>
+  <circle cx="850" cy="220" r="6" fill="#8b5cf6" opacity="0.7"/>
+  <circle cx="860" cy="215" r="6" fill="#8b5cf6" opacity="0.7"/>
+  <circle cx="840" cy="210" r="6" fill="#8b5cf6" opacity="0.7"/>
+  <circle cx="855" cy="230" r="6" fill="#8b5cf6" opacity="0.7"/>
+  <circle cx="845" cy="225" r="6" fill="#8b5cf6" opacity="0.7"/>
+  <circle cx="835" cy="205" r="6" fill="#8b5cf6" opacity="0.7"/>
+  <circle cx="950" cy="280" r="6" fill="#a78bfa" opacity="0.7"/>
+  <circle cx="960" cy="285" r="6" fill="#a78bfa" opacity="0.7"/>
+  <circle cx="940" cy="275" r="6" fill="#a78bfa" opacity="0.7"/>
+  <circle cx="955" cy="290" r="6" fill="#a78bfa" opacity="0.7"/>
+  <circle cx="945" cy="270" r="6" fill="#a78bfa" opacity="0.7"/>
+  <circle cx="935" cy="280" r="6" fill="#a78bfa" opacity="0.7"/>
+  <circle cx="810" cy="310" r="6" fill="#c4b5fd" opacity="0.7"/>
+  <circle cx="820" cy="320" r="6" fill="#c4b5fd" opacity="0.7"/>
+  <circle cx="800" cy="305" r="6" fill="#c4b5fd" opacity="0.7"/>
+  <circle cx="815" cy="315" r="6" fill="#c4b5fd" opacity="0.7"/>
+  <circle cx="805" cy="325" r="6" fill="#c4b5fd" opacity="0.7"/>
+  <circle cx="795" cy="310" r="6" fill="#c4b5fd" opacity="0.7"/>
+  <text x="755" y="270" font-family="Arial, sans-serif" font-size="10" fill="#6366f1" style="white-space: pre;">事件类型</text>
+  <text x="845" y="195" font-family="Arial, sans-serif" font-size="10" fill="#8b5cf6" style="white-space: pre;">系统组件</text>
+  <text x="950" y="305" font-family="Arial, sans-serif" font-size="10" fill="#a78bfa" style="white-space: pre;">影响范围</text>
+  <text x="805" y="335" font-family="Arial, sans-serif" font-size="10" fill="#c4b5fd" style="white-space: pre;">解决方案</text>
+  <circle cx="920" cy="330" r="6" fill="#c4b5fd" opacity="0.7"/>
+  <circle cx="930" cy="340" r="6" fill="#c4b5fd" opacity="0.7"/>
+  <circle cx="910" cy="325" r="6" fill="#c4b5fd" opacity="0.7"/>
+  <circle cx="1000" cy="240" r="6" fill="#a78bfa" opacity="0.7"/>
+  <circle cx="1010" cy="245" r="6" fill="#a78bfa" opacity="0.7"/>
+  <circle cx="990" cy="235" r="6" fill="#a78bfa" opacity="0.7"/>
+  <circle cx="1050" cy="270" r="6" fill="#8b5cf6" opacity="0.7"/>
+  <circle cx="1060" cy="275" r="6" fill="#8b5cf6" opacity="0.7"/>
+  <circle cx="1040" cy="265" r="6" fill="#8b5cf6" opacity="0.7"/>
+  <text x="120" y="420" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#262626" style="white-space: pre;">基于思维链 CoT 分析</text>
+  <rect x="120" y="440" width="500" height="220" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <rect x="150" y="470" width="440" height="50" rx="4" fill="#6366f1" opacity="0.2"/>
+  <text x="370" y="500" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#262626" style="white-space: pre;">初始查询</text>
+  <rect x="150" y="530" width="440" height="50" rx="4" fill="#6366f1" opacity="0.4"/>
+  <text x="370" y="560" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#262626" style="white-space: pre;">后续查询</text>
+  <rect x="150" y="590" width="440" height="50" rx="4" fill="#6366f1" opacity="0.6"/>
+  <text x="370" y="620" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">深度分析</text>
+  <text x="660" y="420" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#262626" style="white-space: pre;">可视化与效益</text>
+  <rect x="660" y="440" width="500" height="220" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <rect x="690" y="470" width="440" height="140" fill="url(#subtleGradient)" rx="4"/>
+  <line x1="690" y1="610" x2="1130" y2="610" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="690" y1="470" x2="690" y2="610" stroke="#e5e7eb" stroke-width="1.5"/>
+  <path d="M690,550 C750,535 810,565 870,505 S930,535 990,485 S1050,515 1090,480" fill="none" stroke="url(#accentGradient)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M690,580 C750,565 810,595 870,555 S930,565 990,535 S1050,545 1090,520" fill="none" stroke="#8b5cf6" stroke-width="3" opacity="0.5" stroke-linecap="round"/>
+  <rect x="700" y="620" width="10" height="10" rx="5" fill="#6366f1" opacity="0.7"/>
+  <text x="720" y="630" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">及时性</text>
+  <rect x="800" y="620" width="10" height="10" rx="5" fill="#8b5cf6" opacity="0.7"/>
+  <text x="820" y="630" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">可重复</text>
+  <rect x="900" y="620" width="10" height="10" rx="5" fill="#a78bfa" opacity="0.7"/>
+  <text x="920" y="630" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">有效性</text>
+  <rect x="1000" y="620" width="10" height="10" rx="5" fill="#c4b5fd" opacity="0.7"/>
+  <text x="1020" y="630" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">去集中化</text>
+  <rect x="0" y="670" width="1280" height="50" fill="#6366f1" opacity="0.03"/>
+  <text x="640" y="700" font-family="Arial, sans-serif" font-size="16" fill="#525252" text-anchor="middle" style="white-space: pre;">自然语言交互与智能数据分析</text>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 28px;" x="976.032" y="624.13"> </text>
+</svg>

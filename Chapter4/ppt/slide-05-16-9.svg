@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1280" height="720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#f7f9fc;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#6366f1;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#8b5cf6;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="medinfoBanner" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#6366f1;stop-opacity:0.05"/>
+      <stop offset="1" style="stop-color:#8b5cf6;stop-opacity:0.1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bgGradient)"/>
+  <text x="120" y="80" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#262626" style="white-space: pre;">MAUDE to GO: 研究影响与创新性</text>
+  <rect x="120" y="100" width="180" height="3" fill="url(#accentGradient)" rx="1.5"/>
+  <rect x="120" y="130" width="1040" height="100" rx="8" fill="url(#medinfoBanner)" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="150" y="155" width="60" height="50" rx="4" fill="url(#accentGradient)"/>
+  <text x="180" y="185" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">MED25</text>
+  <text x="240" y="170" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#262626" style="white-space: pre;">AutoQUEST: 基于LLM的CoT方法论文</text>
+  <text x="240" y="205" font-family="Arial, sans-serif" font-size="16" fill="#6366f1" style="white-space: pre;">被MedInfo 2025接收为Full Paper</text>
+  <text x="1040" y="170" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#262626" style="white-space: pre;">The 20th World Congress on</text>
+  <text x="1040" y="195" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#262626" style="white-space: pre;">Medical and Health Informatics</text>
+  <text x="1040" y="220" font-family="Arial, sans-serif" font-size="16" text-anchor="end" fill="#6366f1" style="white-space: pre;">2025.8.9-13 · 台北</text>
+  <text x="120" y="270" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#262626" style="white-space: pre;">研究重要性</text>
+  <rect x="120" y="290" width="500" height="370" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <circle cx="150" cy="330" r="5" fill="#6366f1"/>
+  <text x="170" y="335" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">FDA MAUDE数据库包含4900万医疗设备事件报告</text>
+  <circle cx="150" cy="380" r="5" fill="#6366f1"/>
+  <text x="170" y="385" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">自然语言查询接口大幅降低分析门槛</text>
+  <circle cx="150" cy="430" r="5" fill="#6366f1"/>
+  <text x="170" y="435" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">快速识别医疗设备安全隐患和不良事件</text>
+  <circle cx="150" cy="480" r="5" fill="#6366f1"/>
+  <text x="170" y="485" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">为监管决策提供数据支持</text>
+  <circle cx="150" cy="530" r="5" fill="#6366f1"/>
+  <text x="170" y="535" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">临床医生无需数据科学背景即可使用</text>
+  <circle cx="150" cy="580" r="5" fill="#6366f1"/>
+  <text x="170" y="585" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">提高医疗设备数据利用效率和安全监测水平</text>
+  <rect x="170" y="610" width="400" height="30" rx="6" fill="#f5f3ff"/>
+  <text x="370" y="630" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6366f1" style="white-space: pre;">提高医疗设备数据利用率</text>
+  <text x="660" y="270" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#262626" style="white-space: pre;">创新亮点</text>
+  <rect x="660" y="290" width="500" height="370" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <rect x="690" y="326" width="8" height="8" rx="1" fill="#6366f1" opacity="0.8"/>
+  <text x="710" y="335" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">基于LLM的Chain-of-Thought问题生成</text>
+  <rect x="690" y="376" width="8" height="8" rx="1" fill="#8b5cf6" opacity="0.8"/>
+  <text x="710" y="385" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">自动化问题验证与优化机制</text>
+  <rect x="690" y="426" width="8" height="8" rx="1" fill="#a78bfa" opacity="0.8"/>
+  <text x="710" y="435" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">交互式分析减少认知负担</text>
+  <rect x="690" y="476" width="8" height="8" rx="1" fill="#c4b5fd" opacity="0.8"/>
+  <text x="710" y="485" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">高效处理非结构化医疗文本数据</text>
+  <rect x="690" y="526" width="8" height="8" rx="1" fill="#ddd6fe" opacity="0.8"/>
+  <text x="710" y="535" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">端到端解决方案：从数据清洗到可视化</text>
+  <rect x="686.377" y="563.014" width="332.244" height="80" rx="6" fill="#f5f3ff" style=""/>
+  <circle cx="730" cy="600" r="15" fill="#6366f1" opacity="0.6"/>
+  <text x="730" y="605" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff" style="white-space: pre;">问题</text>
+  <path d="M745,600 C760,600 760,600 775,600" stroke="#e5e7eb" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="760" y="590" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#6b7280" style="white-space: pre;">CoT</text>
+  <circle cx="790" cy="600" r="15" fill="#8b5cf6" opacity="0.6"/>
+  <text x="790" y="605" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff" style="white-space: pre;">验证</text>
+  <path d="M805,600 C820,600 820,600 835,600" stroke="#e5e7eb" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="820" y="590" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#6b7280" style="white-space: pre;">优化</text>
+  <circle cx="850" cy="600" r="15" fill="#a78bfa" opacity="0.6"/>
+  <text x="850" y="605" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff" style="white-space: pre;">答案</text>
+  <path d="M865,600 C880,600 880,600 895,600" stroke="#e5e7eb" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="880" y="590" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#6b7280" style="white-space: pre;">验证</text>
+  <circle cx="910" cy="600" r="15" fill="#c4b5fd" opacity="0.6"/>
+  <text x="910" y="605" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff" style="white-space: pre;">反馈</text>
+  <path d="M925,600 C940,600 940,600 955,600" stroke="#e5e7eb" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="940" y="590" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#6b7280" style="white-space: pre;">整合</text>
+  <circle cx="970" cy="600" r="15" fill="#ddd6fe" opacity="0.6"/>
+  <text x="970" y="605" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff" style="white-space: pre;">结果</text>
+  <text x="852.368" y="631.801" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#6b7280" style="white-space: pre; font-size: 12px;">AutoQUEST: Chain-of-Thought问题生成与验证流程</text>
+  <rect x="0" y="670" width="1280" height="50" fill="#f5f3ff"/>
+  <text x="640" y="700" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6366f1" style="white-space: pre;">MedInfo 2025 | The 20th World Congress on Medical and Health Informatics</text>
+</svg>

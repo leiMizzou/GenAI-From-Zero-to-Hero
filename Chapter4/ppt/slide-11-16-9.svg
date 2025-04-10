@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1280" height="720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#f7f9fc;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#6366f1;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#8b5cf6;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="intlGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#6366f1;stop-opacity:0.8"/>
+      <stop offset="1" style="stop-color:#818cf8;stop-opacity:0.8"/>
+    </linearGradient>
+    <linearGradient id="chinaGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#ef4444;stop-opacity:0.8"/>
+      <stop offset="1" style="stop-color:#f87171;stop-opacity:0.8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bgGradient)"/>
+  <text x="120" y="80" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#262626" style="white-space: pre;">AI大模型分类 (2025)</text>
+  <rect x="120" y="100" width="140" height="3" fill="url(#accentGradient)" rx="1.5"/>
+  <rect x="440" y="130" width="400" height="50" rx="6" fill="#f5f3ff" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="640" y="163" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#4f46e5" style="white-space: pre;">AI大模型</text>
+  <line x1="640" y1="180" x2="640" y2="200" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="320" y1="200" x2="960" y2="200" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="320" y1="200" x2="320" y2="230" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="960" y1="200" x2="960" y2="230" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="120" y="230" width="400" height="50" rx="6" fill="url(#intlGradient)"/>
+  <text x="320" y="263" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">国际模型</text>
+  <rect x="760" y="230" width="400" height="50" rx="6" fill="url(#chinaGradient)"/>
+  <text x="960" y="263" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">中国模型</text>
+  <line x1="320" y1="280" x2="320" y2="300" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="160" y1="300" x2="480" y2="300" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="160" y1="300" x2="160" y2="330" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="480" y1="300" x2="480" y2="330" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="960" y1="280" x2="960" y2="300" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="800" y1="300" x2="1120" y2="300" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="800" y1="300" x2="800" y2="330" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="1120" y1="300" x2="1120" y2="330" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="60" y="330" width="200" height="40" rx="6" fill="#6366f1" opacity="0.7"/>
+  <text x="160" y="355" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">闭源</text>
+  <rect x="380" y="330" width="200" height="40" rx="6" fill="#818cf8" opacity="0.7"/>
+  <text x="480" y="355" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">开源</text>
+  <rect x="700" y="330" width="200" height="40" rx="6" fill="#ef4444" opacity="0.7"/>
+  <text x="800" y="355" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">闭源</text>
+  <rect x="1020" y="330" width="200" height="40" rx="6" fill="#f87171" opacity="0.7"/>
+  <text x="1120" y="355" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">开源</text>
+  <rect x="60" y="390" width="200" height="200" rx="8" fill="#ffffff" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <rect x="60" y="390" width="4" height="200" rx="2" fill="#6366f1"/>
+  <text x="80" y="420" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#6366f1" style="white-space: pre;">闭源国际模型</text>
+  <text x="80" y="450" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">• 文本 (含多模态)</text>
+  <text x="80" y="480" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">• 图像</text>
+  <text x="80" y="510" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">• 音乐</text>
+  <text x="80" y="540" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">• 音频</text>
+  <text x="80" y="570" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">• 视频</text>
+  <rect x="380" y="390" width="200" height="200" rx="8" fill="#ffffff" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <rect x="380" y="390" width="4" height="200" rx="2" fill="#818cf8"/>
+  <text x="400" y="420" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#818cf8" style="white-space: pre;">开源国际模型</text>
+  <text x="400" y="450" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">• 语言</text>
+  <text x="400" y="480" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">• 图像</text>
+  <rect x="700" y="390" width="200" height="200" rx="8" fill="#ffffff" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <rect x="700" y="390" width="4" height="200" rx="2" fill="#ef4444"/>
+  <text x="720" y="420" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ef4444" style="white-space: pre;">闭源中国模型</text>
+  <text x="720" y="450" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">• 综合</text>
+  <text x="720" y="480" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">• 视频</text>
+  <text x="720" y="510" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">• 音乐</text>
+  <text x="720" y="540" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">• 音频</text>
+  <text x="720" y="570" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">• 图像</text>
+  <rect x="1020" y="390" width="200" height="200" rx="8" fill="#ffffff" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <rect x="1020" y="390" width="4" height="200" rx="2" fill="#f87171"/>
+  <text x="1040" y="420" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#f87171" style="white-space: pre;">开源中国模型</text>
+  <text x="1040" y="450" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">• 综合</text>
+  <text x="1040" y="480" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">• 视频</text>
+  <rect x="120" y="610" width="1040" height="30" rx="8" fill="#f5f3ff" opacity="0.7"/>
+  <text x="140" y="630" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#6366f1" style="white-space: pre;">知名模型:</text>
+  <text x="280" y="630" font-family="Arial, sans-serif" font-size="14" fill="#6366f1" style="white-space: pre;">GPT-4.5、Claude 3.7、Gemini 2.5、Grok 3.0、DALL·E 3、Midjourney v7、Sora</text>
+  <text x="800" y="630" font-family="Arial, sans-serif" font-size="14" fill="#ef4444" style="white-space: pre;">DeepSeek V3.0、通义千问2.5、智谱GLM-4、豆包、Kimi 1.6<tspan x="800" dy="1em">​</tspan><tspan x="800" dy="1em">​</tspan></text>
+  <text x="1140" y="680" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#6b7280" text-anchor="end" style="white-space: pre;">数据截至2025年4月7日</text>
+</svg>

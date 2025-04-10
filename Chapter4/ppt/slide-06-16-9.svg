@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1280" height="720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#f7f9fc;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#6366f1;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#8b5cf6;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="phase1Gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#6366f1;stop-opacity:0.1"/>
+      <stop offset="1" style="stop-color:#6366f1;stop-opacity:0.3"/>
+    </linearGradient>
+    <linearGradient id="phase2Gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#8b5cf6;stop-opacity:0.1"/>
+      <stop offset="1" style="stop-color:#8b5cf6;stop-opacity:0.3"/>
+    </linearGradient>
+    <linearGradient id="phase3Gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#a78bfa;stop-opacity:0.1"/>
+      <stop offset="1" style="stop-color:#a78bfa;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bgGradient)"/>
+  <text x="121" y="80" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#262626" style="white-space: pre; font-size: 32px;">输出：长文本生成（与可视化）</text>
+  <rect x="120" y="100" width="140" height="3" fill="url(#accentGradient)" rx="1.5"/>
+  <text x="120" y="150" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#262626" style="white-space: pre;">1. 用户输入与初始化</text>
+  <rect x="120" y="170" width="1040" height="150" rx="8" fill="url(#phase1Gradient)"/>
+  <rect x="160" y="195" width="300" height="100" rx="6" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <text x="310" y="235" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#525252" style="white-space: pre;">用户输入参数</text>
+  <text x="310" y="265" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#525252" style="white-space: pre;">标题 • 字数 • 体裁/语言</text>
+  <path d="M460,245 C475,245 475,245 490,245" stroke="#6366f1" stroke-width="1.5" stroke-opacity="0.5" fill="none"/>
+  <polygon points="485,242 493,245 485,248" fill="#6366f1" fill-opacity="0.5"/>
+  <rect x="490" y="195" width="300" height="100" rx="6" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <text x="640" y="235" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#525252" style="white-space: pre;">环境设置</text>
+  <text x="640" y="265" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#525252" style="white-space: pre;">环境变量 • 日志 • 输出目录</text>
+  <path d="M790,245 C805,245 805,245 820,245" stroke="#6366f1" stroke-width="1.5" stroke-opacity="0.5" fill="none"/>
+  <polygon points="815,242 823,245 815,248" fill="#6366f1" fill-opacity="0.5"/>
+  <rect x="820" y="195" width="300" height="100" rx="6" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <text x="970" y="235" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#525252" style="white-space: pre;">DeepSeek API 访问</text>
+  <text x="970" y="265" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#525252" style="white-space: pre;">验证密钥 • 模型配置 • 重试机制</text>
+  <text x="120" y="360" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#262626" style="white-space: pre;">2. 大纲生成与优化</text>
+  <rect x="120" y="380" width="1040" height="150" rx="8" fill="url(#phase2Gradient)"/>
+  <rect x="160" y="405" width="300" height="100" rx="6" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <text x="310" y="445" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#525252" style="white-space: pre;">大纲生成</text>
+  <text x="310" y="475" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#525252" style="white-space: pre;">节点结构 • 章节划分 • JSON格式</text>
+  <path d="M460,455 C475,455 475,455 490,455" stroke="#8b5cf6" stroke-width="1.5" stroke-opacity="0.5" fill="none"/>
+  <polygon points="485,452 493,455 485,458" fill="#8b5cf6" fill-opacity="0.5"/>
+  <rect x="490" y="405" width="300" height="100" rx="6" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <text x="640" y="445" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#525252" style="white-space: pre;">大纲验证与优化</text>
+  <text x="640" y="475" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#525252" style="white-space: pre;">结构验证 • 章节优化 • 合并/拆分</text>
+  <path d="M790,455 C805,455 805,455 820,455" stroke="#8b5cf6" stroke-width="1.5" stroke-opacity="0.5" fill="none"/>
+  <polygon points="815,452 823,455 815,458" fill="#8b5cf6" fill-opacity="0.5"/>
+  <rect x="820" y="405" width="300" height="100" rx="6" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <text x="970" y="445" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#525252" style="white-space: pre;">标题净化</text>
+  <text x="970" y="475" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#525252" style="white-space: pre;">净化标题 • 重新生成 • 内容过滤</text>
+  <text x="120" y="570" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#262626" style="white-space: pre;">3. 文章生成与保存</text>
+  <rect x="120" y="590" width="1040" height="100" rx="8" fill="url(#phase3Gradient)"/>
+  <rect x="160" y="610" width="300" height="60" rx="6" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <text x="310" y="640" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#525252" style="white-space: pre;">文章组装</text>
+  <text x="310" y="665" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#525252" style="white-space: pre;">引言 • 正文 • 结论</text>
+  <path d="M460,640 C475,640 475,640 490,640" stroke="#a78bfa" stroke-width="1.5" stroke-opacity="0.5" fill="none"/>
+  <polygon points="485,637 493,640 485,643" fill="#a78bfa" fill-opacity="0.5"/>
+  <rect x="490" y="610" width="300" height="60" rx="6" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <text x="640" y="640" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#525252" style="white-space: pre;">DeepSeek API 集成</text>
+  <text x="640" y="665" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#525252" style="white-space: pre;">模型调用 • 错误处理 • 重试</text>
+  <path d="M790,640 C805,640 805,640 820,640" stroke="#a78bfa" stroke-width="1.5" stroke-opacity="0.5" fill="none"/>
+  <polygon points="815,637 823,640 815,643" fill="#a78bfa" fill-opacity="0.5"/>
+  <rect x="820" y="610" width="300" height="60" rx="6" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+  <text x="970" y="640" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#525252" style="white-space: pre;">输出管理</text>
+  <text x="970" y="665" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#525252" style="white-space: pre;">保存文件 • 记录日志 • 结果返回</text>
+</svg>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1280" height="720" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#f7f9fc;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#6366f1;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#8b5cf6;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" style="stop-color:#6366f1;stop-opacity:0.1"/>
+      <stop offset="1" style="stop-color:#8b5cf6;stop-opacity:0.2"/>
+    </linearGradient>
+    <linearGradient id="videoGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#6366f1;stop-opacity:0.8"/>
+      <stop offset="1" style="stop-color:#818cf8;stop-opacity:0.8"/>
+    </linearGradient>
+    <linearGradient id="videoGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#8b5cf6;stop-opacity:0.8"/>
+      <stop offset="1" style="stop-color:#a78bfa;stop-opacity:0.8"/>
+    </linearGradient>
+    <linearGradient id="videoGradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#a78bfa;stop-opacity:0.8"/>
+      <stop offset="1" style="stop-color:#c4b5fd;stop-opacity:0.8"/>
+    </linearGradient>
+    <linearGradient id="videoGradient4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#c4b5fd;stop-opacity:0.8"/>
+      <stop offset="1" style="stop-color:#ddd6fe;stop-opacity:0.8"/>
+    </linearGradient>
+    <bx:export>
+      <bx:file format="pdf">
+        <bx:page/>
+      </bx:file>
+    </bx:export>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bgGradient)"/>
+  <text x="120" y="80" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#262626" style="white-space: pre;">演示视频</text>
+  <rect x="120" y="100" width="110" height="3" fill="url(#accentGradient)" rx="1.5"/>
+  <a href="longwriter_planning.mp4" target="_blank">
+    <rect x="120" y="140" width="520" height="240" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+    <rect x="150" y="170" width="460" height="160" rx="4" fill="#f5f3ff"/>
+    <rect x="150" y="170" width="460" height="160" rx="4" fill="url(#purpleGlow)"/>
+    <circle cx="380" cy="250" r="30" fill="url(#videoGradient1)"/>
+    <polygon points="370,235 400,250 370,265" fill="white"/>
+    <text x="380" y="360" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#262626" style="white-space: pre;">LongWriter 程序规划</text>
+    <rect x="280" y="375" width="200" height="1" fill="#e5e7eb"/>
+    <text x="380" y="395" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#6b7280" style="white-space: pre;">开发过程第1阶段</text>
+  </a>
+  <a href="directory_generation.mp4" target="_blank">
+    <rect x="660" y="140" width="520" height="240" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+    <rect x="690" y="170" width="460" height="160" rx="4" fill="#f5f3ff"/>
+    <rect x="690" y="170" width="460" height="160" rx="4" fill="url(#purpleGlow)"/>
+    <circle cx="920" cy="250" r="30" fill="url(#videoGradient2)"/>
+    <polygon points="910,235 940,250 910,265" fill="white"/>
+    <text x="920" y="360" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#262626" style="white-space: pre;">程序目录及文件生成</text>
+    <rect x="820" y="375" width="200" height="1" fill="#e5e7eb"/>
+    <text x="920" y="395" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#6b7280" style="white-space: pre;">开发过程第2阶段</text>
+  </a>
+  <a href="code_testing.mp4" target="_blank">
+    <rect x="120" y="400" width="520" height="240" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+    <rect x="150" y="430" width="460" height="160" rx="4" fill="#f5f3ff"/>
+    <rect x="150" y="430" width="460" height="160" rx="4" fill="url(#purpleGlow)"/>
+    <circle cx="380" cy="510" r="30" fill="url(#videoGradient3)"/>
+    <polygon points="370,495 400,510 370,525" fill="white"/>
+    <text x="380" y="620" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#262626" style="white-space: pre;">代码编写及执行测试</text>
+    <rect x="280" y="635" width="200" height="1" fill="#e5e7eb"/>
+    <text x="380" y="655" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#6b7280" style="white-space: pre;">开发过程第3阶段</text>
+  </a>
+  <a href="doc_ppt_generation.mp4" target="_blank">
+    <rect x="660" y="400" width="520" height="240" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
+    <rect x="690" y="430" width="460" height="160" rx="4" fill="#f5f3ff"/>
+    <rect x="690" y="430" width="460" height="160" rx="4" fill="url(#purpleGlow)"/>
+    <circle cx="920" cy="510" r="30" fill="url(#videoGradient4)"/>
+    <polygon points="910,495 940,510 910,525" fill="white"/>
+    <text x="920" y="620" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#262626" style="white-space: pre;">文档和PPT生成</text>
+    <rect x="820" y="635" width="200" height="1" fill="#e5e7eb"/>
+    <text x="920" y="655" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#6b7280" style="white-space: pre;">开发过程第4阶段</text>
+  </a>
+  <rect x="120" y="660" width="1040" height="40" rx="8" fill="#f5f3ff" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.03))"/>
+  <text x="640" y="685" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6366f1" style="white-space: pre;">点击视频缩略图播放相应的演示视频</text>
+</svg>

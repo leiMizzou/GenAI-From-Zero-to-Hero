@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- 背景 -->
+  <rect width="800" height="500" fill="#f8f9fa" />
+  
+  <!-- 标题 -->
+  <text x="400" y="40" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">AI编程助手最佳实践与技巧</text>
+  
+  <!-- 指令优化 -->
+  <rect x="100" y="80" width="280" height="160" rx="10" fill="#e8eaed" />
+  <text x="240" y="105" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">指令优化</text>
+  
+  <rect x="120" y="120" width="240" height="100" rx="5" fill="white" stroke="#ccc" />
+  <text x="130" y="140" font-family="Arial" font-size="12" fill="#333">✅ 使用明确、精确的指令</text>
+  <text x="130" y="160" font-family="Arial" font-size="12" fill="#333">✅ 提供上下文和具体需求</text>
+  <text x="130" y="180" font-family="Arial" font-size="12" fill="#333">✅ 分解复杂任务为多个小步骤</text>
+  <text x="130" y="200" font-family="Arial" font-size="12" fill="#333">❌ 避免模糊或过于抽象的描述</text>
+  
+  <!-- 工作流优化 -->
+  <rect x="420" y="80" width="280" height="160" rx="10" fill="#e8eaed" />
+  <text x="560" y="105" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">工作流优化</text>
+  
+  <rect x="440" y="120" width="240" height="100" rx="5" fill="white" stroke="#ccc" />
+  <text x="450" y="140" font-family="Arial" font-size="12" fill="#333">✅ 先让AI创建项目架构</text>
+  <text x="450" y="160" font-family="Arial" font-size="12" fill="#333">✅ 分模块开发，逐一实现功能</text>
+  <text x="450" y="180" font-family="Arial" font-size="12" fill="#333">✅ 结合版本控制，保留修改历史</text>
+  <text x="450" y="200" font-family="Arial" font-size="12" fill="#333">✅ 定期让AI审查和优化已有代码</text>
+  
+  <!-- 代码质量 -->
+  <rect x="100" y="260" width="280" height="160" rx="10" fill="#e8eaed" />
+  <text x="240" y="285" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">代码质量提升</text>
+  
+  <rect x="120" y="300" width="240" height="100" rx="5" fill="white" stroke="#ccc" />
+  <text x="130" y="320" font-family="Arial" font-size="12" fill="#333">✅ 要求添加详细注释和文档</text>
+  <text x="130" y="340" font-family="Arial" font-size="12" fill="#333">✅ 让AI实现错误处理和边界情况</text>
+  <text x="130" y="360" font-family="Arial" font-size="12" fill="#333">✅ 请求生成单元测试</text>
+  <text x="130" y="380" font-family="Arial" font-size="12" fill="#333">✅ 定期要求代码重构和优化</text>
+  
+  <!-- 问题解决 -->
+  <rect x="420" y="260" width="280" height="160" rx="10" fill="#e8eaed" />
+  <text x="560" y="285" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">问题解决策略</text>
+  
+  <rect x="440" y="300" width="240" height="100" rx="5" fill="white" stroke="#ccc" />
+  <text x="450" y="320" font-family="Arial" font-size="12" fill="#333">✅ 提供详细的错误信息和上下文</text>
+  <text x="450" y="340" font-family="Arial" font-size="12" fill="#333">✅ 分步骤解决复杂问题</text>
+  <text x="450" y="360" font-family="Arial" font-size="12" fill="#333">✅ 询问多种解决方案并比较</text>
+  <text x="450" y="380" font-family="Arial" font-size="12" fill="#333">✅ 结合日志和调试信息请求帮助</text>
+  
+  <!-- 工具选择图表 -->
+  <rect x="170" y="440" width="460" height="40" rx="5" fill="#4285f4" opacity="0.8" />
+  <text x="400" y="465" font-family="Arial" font-size="14" fill="white" text-anchor="middle">工具选择: 项目复杂度 vs 响应速度 vs 功能需求</text>
+</svg>
