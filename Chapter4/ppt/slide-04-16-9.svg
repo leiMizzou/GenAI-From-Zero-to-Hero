@@ -27,7 +27,7 @@
   <rect x="150" y="350" width="10" height="10" rx="5" fill="#8b5cf6" opacity="0.7"/>
   <text x="170" y="360" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre;">自动识别关键词与上下文关联</text>
   <rect x="660" y="170" width="500" height="220" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
-  <text style="fill: rgb(64, 64, 64); font-family: Arial, sans-serif; font-size: 22px; font-weight: 700; text-anchor: middle; white-space: pre;" x="851.242" y="149.391">语义聚类和相似度分析（CHIMA2025）</text>
+  <text style="fill: rgb(64, 64, 64); font-family: Arial, sans-serif; font-size: 22px; font-weight: 700; text-anchor: middle; white-space: pre;" x="851.242" y="149.391">语义聚类和相似度分析（CHIMA会议）</text>
   <circle cx="760" cy="250" r="6" fill="#6366f1" opacity="0.7"/>
   <circle cx="770" cy="240" r="6" fill="#6366f1" opacity="0.7"/>
   <circle cx="750" cy="235" r="6" fill="#6366f1" opacity="0.7"/>
@@ -70,7 +70,7 @@
   <rect x="150" y="470" width="440" height="50" rx="4" fill="#6366f1" opacity="0.2"/>
   <text x="370" y="500" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#262626" style="white-space: pre;">初始查询</text>
   <rect x="150" y="530" width="440" height="50" rx="4" fill="#6366f1" opacity="0.4"/>
-  <text x="370" y="560" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#262626" style="white-space: pre;">后续查询</text>
+  <text x="370" y="560" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#262626" style="white-space: pre;">规划和迭代</text>
   <rect x="150" y="590" width="440" height="50" rx="4" fill="#6366f1" opacity="0.6"/>
   <text x="370" y="620" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">深度分析</text>
   <text x="660" y="420" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#262626" style="white-space: pre;">可视化与效益</text>
@@ -87,7 +87,7 @@
   <rect x="900" y="620" width="10" height="10" rx="5" fill="#a78bfa" opacity="0.7"/>
   <text x="920" y="630" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">有效性</text>
   <rect x="1000" y="620" width="10" height="10" rx="5" fill="#c4b5fd" opacity="0.7"/>
-  <text x="1020" y="630" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">去集中化</text>
+  <text x="1020" y="630" font-family="Arial, sans-serif" font-size="14" fill="#525252" style="white-space: pre;">去中心化</text>
   <rect x="0" y="670" width="1280" height="50" fill="#6366f1" opacity="0.03"/>
   <text x="640" y="700" font-family="Arial, sans-serif" font-size="16" fill="#525252" text-anchor="middle" style="white-space: pre;">自然语言交互与智能数据分析</text>
   <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 28px;" x="976.032" y="624.13"> </text>
