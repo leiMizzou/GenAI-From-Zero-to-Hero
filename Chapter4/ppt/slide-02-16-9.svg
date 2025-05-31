@@ -47,15 +47,15 @@
   <rect x="170" y="645" width="8" height="8" rx="1" fill="#a78bfa" opacity="0.6"/>
   <text x="190" y="653" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">数据治理</text>
   <rect x="340" y="575" width="8" height="8" rx="1" fill="#6366f1" opacity="0.6"/>
-  <text x="360" y="583" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">医院信息化</text>
+  <text x="360" y="583" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">患者安全</text>
   <rect x="340" y="610" width="8" height="8" rx="1" fill="#8b5cf6" opacity="0.6"/>
-  <text x="360" y="618" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">互联网医疗</text>
+  <text x="360" y="618" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">可穿戴设备</text>
   <rect x="340" y="645" width="8" height="8" rx="1" fill="#a78bfa" opacity="0.6"/>
-  <text x="360" y="653" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">可穿戴设备与大数据</text>
+  <text x="360" y="653" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">嵌入式系统</text>
   <rect x="660" y="510" width="500" height="170" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
   <rect x="660" y="510" width="5" height="170" rx="2.5" fill="#6366f1"/>
   <text x="690" y="545" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#262626" style="white-space: pre;">2025 计划</text>
-  <text style="fill: rgb(99, 102, 241); font-family: Arial, sans-serif; white-space: pre;"><tspan x="690" y="580">目前新建GitHub开源项目 10+，贡献200+，75%+开源</tspan><tspan x="690" dy="1em">​</tspan><tspan>文章 2 篇会议，1 篇中文期刊，1 篇 PNS 子刊</tspan><tspan x="690" dy="1em">​</tspan><tspan x="690" dy="1em">​</tspan></text>
+  <text style="fill: rgb(99, 102, 241); font-family: Arial, sans-serif; white-space: pre;"><tspan x="690" y="580">目前新建GitHub开源项目 10+，贡献200+，75%+开源</tspan><tspan x="690" dy="1em">​</tspan><tspan>预计文章 2 篇会议，1 篇中文核心，1 篇英文高分期刊</tspan><tspan x="690" dy="1em">​</tspan><tspan x="690" dy="1em">​</tspan></text>
   <rect x="710" y="650" width="20" height="10" rx="1" fill="url(#publicationGradient)"/>
   <rect x="740" y="645" width="20" height="15" rx="1" fill="url(#publicationGradient)"/>
   <rect x="770" y="635" width="20" height="25" rx="1" fill="url(#publicationGradient)"/>

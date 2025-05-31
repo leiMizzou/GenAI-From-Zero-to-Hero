@@ -36,11 +36,11 @@
   <rect x="120" y="340" width="500" height="320" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>
   <text x="150" y="380" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#404040" style="white-space: pre;">快速部署</text>
   <text x="150" y="415" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">• Mac Mini M4</text>
-  <text x="150" y="450" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">• ~¥7000电脑配置</text>
+  <text x="150" y="450" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">• ~ ¥7000电脑配置</text>
   <text x="150" y="485" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">• 30分钟安装，3 分钟完成数据研究过程<tspan x="150" dy="1em">​</tspan></text>
   <text x="150" y="530" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#404040" style="white-space: pre;">数据规模</text>
   <text x="150" y="565" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">• 160万 / 4900万</text>
-  <text x="150" y="600" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">• 支持全量数据和季度更新</text>
+  <text x="150" y="600" font-family="Arial, sans-serif" font-size="16" fill="#525252" style="white-space: pre;">• 支持自定义规模更新</text>
   <text x="150" y="635" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#404040" style="white-space: pre;">可靠性</text>
   <text x="395.069" y="636.454" font-family="Arial, sans-serif" font-size="16" fill="#6366f1" style="white-space: pre; font-size: 16px;">高一致性·低延迟·近实时</text>
   <rect x="660" y="340" width="500" height="320" rx="8" fill="white" filter="drop-shadow(0px 1px 2px rgba(0,0,0,0.05))"/>

@@ -21,7 +21,7 @@
   <rect x="150" y="155" width="60" height="50" rx="4" fill="url(#accentGradient)"/>
   <text x="180" y="185" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">MED25</text>
   <text x="240" y="170" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#262626" style="white-space: pre;">AutoQUEST: 基于LLM的CoT方法论文</text>
-  <text x="240" y="205" font-family="Arial, sans-serif" font-size="16" fill="#6366f1" style="white-space: pre;">被MedInfo 2025接收为Full Paper</text>
+  <text x="240" y="205" font-family="Arial, sans-serif" font-size="16" fill="#6366f1" style="white-space: pre;">MedInfo 2025 Full Paper</text>
   <text x="1040" y="170" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#262626" style="white-space: pre;">The 20th World Congress on</text>
   <text x="1040" y="195" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#262626" style="white-space: pre;">Medical and Health Informatics</text>
   <text x="1040" y="220" font-family="Arial, sans-serif" font-size="16" text-anchor="end" fill="#6366f1" style="white-space: pre;">2025.8.9-13 · 台北</text>
