@@ -109,7 +109,7 @@
   <circle cx="700" cy="600" r="12" fill="#8b5cf6" opacity="0.9"/>
   <text x="700" y="604" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white" style="white-space: pre;">$</text>
   <text x="725" y="604" font-family="Arial, sans-serif" font-size="15" fill="#525252" style="white-space: pre;">付费功能</text>
-  <text x="932.647" y="603.769" font-family="Arial, sans-serif" font-size="13" font-style="italic" fill="#6b7280" style="white-space: pre; font-size: 13px;">注: 此比较基于2024年4月功能情况</text>
+  <text x="932.647" y="603.769" font-family="Arial, sans-serif" font-size="13" font-style="italic" fill="#6b7280" style="white-space: pre; font-size: 13px;">注: 此比较基于2025年2月功能情况</text>
   <rect x="0" y="670" width="1280" height="50" fill="#6366f1" opacity="0.03"/>
   <text x="640" y="700" font-family="Arial, sans-serif" font-size="16" fill="#6b7280" text-anchor="middle" style="white-space: pre;">AI编程助手功能对比与选择指南</text>
 </svg>

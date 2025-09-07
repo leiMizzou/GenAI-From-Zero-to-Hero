@@ -169,6 +169,8 @@ def generate_ppt(code_file, output_file):
     ppt.save(output_file)
 
 if __name__ == "__main__":
-    input_file = "GenAI-From-Zero-to-Hero/Chapter4/examples/longwriter/main.py"
-    output_file = "longwriter_tech_presentation.pptx"
+    # Use relative path from the project root
+    input_file = "Chapter4/examples/longwriter/main.py" 
+    # Save the output in the longwriter directory
+    output_file = "Chapter4/examples/longwriter/longwriter.pptx" 
     generate_ppt(input_file, output_file)
